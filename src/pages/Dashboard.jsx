@@ -1,13 +1,14 @@
-import Footer from "@/components/Footer";
+import Footer from "../components/Footer";
 import React from "react";
 import { ChevronRightIcon } from "@radix-ui/react-icons";
+import Stepper, { Stepper2 } from "../components/Stepper";
 
 
 export default function Dashboard() {
 
     return (
         <>
-            <div className=" bg-primary-image h-[700px]">
+            <div className=" bg-primary-image h-[700px] ">
                 {/* section  */}
                 <nav className="flex text-white   w-full justify-between px-12 backdrop-blur-sm h-[181px] py-5 relative">
                     <div className="flex items-center gap-[6px] h-10 ">
@@ -15,7 +16,7 @@ export default function Dashboard() {
                         <img src="/images/logo_2.png" alt="" />
 
                     </div>
-                    <div className="flex justify-between   gap-[50px] ">
+                    <div className="xl:flex justify-between   gap-[50px] hidden">
                         <p className="text-white text-lg font-medium">
                             What’s GALK
                         </p>
@@ -32,10 +33,10 @@ export default function Dashboard() {
                             FAQ
                         </p>
                     </div>
-                    <div>
+                    <div className="xl:block hidden">
                         <img src="/icons/insta.png" alt="" />
                     </div>
-                    <div className="flex flex-col items-center justify-center -mt-14 gap-[9px] absolute top-full left-1/2 -translate-x-1/2 w-full ">
+                    <div className="lg:flex flex-col items-center justify-center -mt-14 gap-[9px] absolute top-full left-1/2 -translate-x-1/2 w-full hidden">
                         <div className="text-primary text-[42px] font-black bg-secondary px-5 ">
                             IIT students <span className="text-white text-4xl">who want to</span> intern <span className="text-white text-4xl">at a</span> Japanese company,
                         </div>
@@ -53,96 +54,65 @@ export default function Dashboard() {
                         What’s GALK?
                     </h1>
                     <hr className="w-[60px]  border-1 border-white_light  " />
-                    <p className="text-xl font-normal text-black_light  text-center pt-6">
+                    <p className="md:text-xl  text-sm font-normal text-black_light  text-center pt-6">
                         We offer a two-month summer internship program at a Japanese company
                         for job-seeking students of the Indian Institute of Technology.
                     </p>
-                    <p className="text-xl font-normal text-black_light max-w-[900px] w-full text-center ">
-                        There is no <span className="font-bold"> need to speak Japanese </span>and Travel, accommodation, and living expenses will be covered.
-                        ( Only visa application fees and travel insurance are to be paid by the student.)
-                        so all you need is <span className="font-bold">  a desire to work in Japan! </span>
+                    <p className="md:text-xl text-sm  font-normal text-black_light max-w-[900px] w-full text-center ">
+                        There is no <span className="font-bold text-[15px] md:text-xl"> need to speak Japanese </span>and Travel, accommodation, and living expenses will be covered. <br/>
+                        ( Only visa application fees and travel insurance are to be paid by the student.) <br/>
+                        so all you need is <span className="font-bold text-[15px] md:text-xl">  a desire to work in Japan! </span>
                     </p>
-                    <div className="flex gap-3 pt-6">
-                        <img src="/images/db1.png" alt="" className="w-[324px] h-[164px] object-cover object-center" />
-                        <img src="/images/db2.png" alt="" className="w-[324px] h-[164px] object-cover object-center" />
-                        <img src="/images/db3.png" alt="" className="w-[324px] h-[164px] object-cover object-center" />
+                    <div className="flex md:flex-row flex-col md:gap-3  gap-2 pt-6 ">
+                        <img src="/images/db1.png" alt="" className="xl:w-[324px] md:w-[250px] w-[343px] h-[174px]  md:h-[164px] object-cover aspect-square object-center" />
+                        <img src="/images/db2.png" alt="" className="xl:w-[324px] md:w-[250px] w-[343px] h-[174px]  md:h-[164px] object-cover aspect-square object-center" />
+                        <img src="/images/db3.png" alt="" className="xl:w-[324px] md:w-[250px] w-[343px] h-[174px]  md:h-[164px] object-cover aspect-square object-center" />
                     </div>
 
 
                 </div>
             </div>
-            <div className="bg-gray-100 flex flex-col justify-center items-center relative mt-[166px] pt-8 pb-[84px] ">
-                <h1 className="text-[76px] font-bold text-gray-100 absolute -top-[84px] w-full text-center z-[1]">
+            <div className="bg-gray-100 flex flex-col justify-center items-center relative mt-[70px] md:mt-[166px] pt-8 pb-[84px] ">
+                <h1 className="xl:text-[76px] text-[26px] font-bold text-gray-100 absolute  -top-[29px] md:-top-[84px] w-full text-center z-[1]">
                     GALK SUMMER INTERNSHIP
                 </h1>
                 <div className="flex gap-1 items-center  max-w-[990px] px-5  w-full">
-                    <h1 className="text-[32px] font-bold text-black_light">
+                    <h1 className="md:text-[32px] text-2xl  font-bold text-black_light">
                         How to get Internship?
                     </h1>
-                    <img src="/images/plane.png" alt="" />
-                </div>
-                
-                <div>
-                    <JobProcess
-                        className="pt-8"
-                        heading="Step.1"
-                        content="You will get  notification from the Placement Cell  to inform you that they are accepting applications for the GALK summer internship."
-                    />
-                    <JobProcess
-                        className="pt-[52px]"
-                        heading="Step.2"
-                        content="Please register on the GALK portal in the notification. ( registration on the GALK Portal = application ) "
-                    />
-                    <JobProcess
-                        className="pt-[52px]"
-                        heading="Step.3"
-                        content="Please take the Primary selection on GALK Portal.
-                    Only those who pass the Primary selection will proceed to the Secondary selection."
-                    />
+                    <img src="/images/plane.png" alt="" className="lg:w-[200px] lg:h-auto  w-[105px]   " />
                 </div>
 
-                <div className="max-w-[835px] px-5 w-full pt-2">
-                    <img src="/images/screen.png" alt="" className="w-[196px] h-[175px] object-cover object-center" />
+                <div className="flex justify-start pt-12 pl-16  max-w-[990px]  w-full  ">
+                    <Stepper2 />
+
+
                 </div>
-                <JobProcess
-                    className="pt-9 pb-3"
-                    heading="Step.4"
-                    content="Please take the Secondary selection on GALK Portal.
-                    Only those who pass the Secondary selection will  be able to participate in an internship at a Japanese company."
-                />
-                <div className="max-w-[835px] px-5 w-full pt-2">
-                    <img src="/images/screen.png" alt="" className="w-[196px] h-[175px] object-cover object-center" />
+                <div className="  max-w-[990px] pl-24 pt-16 md:pt-2  w-full">
+                    <img src="/images/screen.png" alt="" className="w-[207px] h-[175px] object-cover object-center " />
+
                 </div>
+
+
 
 
             </div>
-            <div className="flex items-center justify-center py-[80px] bg-black_light relative">
+            {/* <div className="flex items-center justify-center py-[80px] bg-black_light relative">
                 <div className="max-w-[990px]  w-full ">
-                    <img src="/images/recruitmentprocess.png" alt="" className="w-[301px] h-[247px] object-cover object-center absolute right-[17%] top-9" />
+                    <img src="/images/recruitmentprocess.png" alt="" className="w-[301px] h-[247px] object-cover object-center absolute right-[15%] top-9" />
 
-                    <div className="text-white w-full ">
+                    <div className="text-white w-full pb-10">
                         <h1 className="text-white text-[32px] font-bold px-5">
                             Flow from the start of internship to recruitment
                         </h1>
-                        <JobProcess
-                            className="pt-[65px]"
-                            heading="Step.1"
-                            content="Participate in a 2-month Summer internship at a Japanese company"
-                        />
-                        <JobProcess
-                            className="pt-[65px]"
-                            heading="Step.2"
-                            content="After completion of the internship, you will have a chance to get the PPO from intern company."
-                        />
-                        <JobProcess
-                            className="pt-[65px]"
-                            heading="Step.3"
-                            content="Join the company in October of the following year"
-                        />
-
+                    </div>
+                    <div className="flex justify-left pl-[78px]">
+                        <Stepper />
                     </div>
 
-                    <div className="flex gap-3 pt-[60px] px-5">
+
+
+                    <div className="flex gap-3 mt-[60px] px-5 ">
                         <img src="/images/job1.png" alt="" className="w-[324px] h-[164px] object-cover object-center" />
                         <img src="/images/job2.png" alt="" className="w-[324px] h-[164px] object-cover object-center" />
                         <img src="/images/job3.png" alt="" className="w-[324px] h-[164px] object-cover object-center" />
@@ -150,8 +120,8 @@ export default function Dashboard() {
                     </div>
 
                 </div>
-            </div>
-            <div className="flex items-center justify-center w-full">
+            </div> */}
+            {/* <div className="flex items-center justify-center w-full">
                 <div className="bg-white pt-[68px]  w-full max-w-[990px] px-5   pb-[80px]">
                     <div className="flex gap-7">
                         <p className="text-[32px] font-bold text-black_light">
@@ -169,8 +139,8 @@ export default function Dashboard() {
                     </div>
 
                 </div>
-            </div>
-            <div className="flex items-center justify-center w-full bg-black_light ">
+            </div> */}
+            {/* <div className="flex items-center justify-center w-full bg-black_light ">
                 <div className="w-full max-w-[990px] px-5 pb-[72px] relative">
                     <div className="flex gap-4 items-center justify-center pt-[88px] pb-10">
                         <p className="text-[32px] font-bold text-white">
@@ -214,8 +184,8 @@ export default function Dashboard() {
 
 
                 </div>
-            </div>
-            <div className="flex items-center justify-center w-full bg-white  py-[80px]">
+            </div> */}
+            {/* <div className="flex items-center justify-center w-full bg-white  py-[80px]">
                 <div className="w-full max-w-[990px] px-5  ">
                     <p className="text-[32px] font-bold text-black_light pb-[29px]">
                         FAQ
@@ -229,8 +199,9 @@ export default function Dashboard() {
 
 
                 </div>
-            </div>
-            <Footer />
+            </div> */}
+
+            {/* <Footer /> */}
 
 
 
@@ -243,19 +214,17 @@ export default function Dashboard() {
 
 
 
-type Props = {
-    heading: string;
-    content: React.ReactNode;
-    className: React.ReactNode;
-}
 
 
-export function JobProcess({ heading, content, className }: Props) {
+
+export function JobProcess({ heading, content, className }) {
     return (
         <div className={`flex gap-8 max-w-[990px] px-5 ${className}`}>
             <h1 className="text-base font-bold">
+
                 {heading}
             </h1>
+
 
             <p className="text-base font-normal">
                 {content}
@@ -274,18 +243,9 @@ const students = [
 
 ]
 
-type Student = {
-    image: string;
-    name: string;
-    college: string;
-    content: string;
-}
 
-type StudentListItemProps = {
-    student: Student
-}
 
-function StudentListItem({ student }: StudentListItemProps) {
+function StudentListItem({ student }) {
     return (
         <div className="flex gap-4 w-full ">
             <img src={student.image} alt="" width={110} height={110} className="h-full w-auto object-cover object-center aspect-square rounded" />
@@ -308,23 +268,15 @@ function StudentListItem({ student }: StudentListItemProps) {
 }
 
 const Queries = [
-    { query: "    Q", question: "If I become an intern, how do I pay for my expenses to go to Japan?", answer: "All travel, accommodation, and living expenses will be covered. Only visa application fees and travel insurance are to be paid by the interns themselves." },
+    { query: "Q", question: "If I become an intern, how do I pay for my expenses to go to Japan?", answer: "All travel, accommodation, and living expenses will be covered. Only visa application fees and travel insurance are to be paid by the interns themselves." },
     { query: "Q", question: "Does the GALK summer internship mean working for a Japanese company called GALK?", answer: "No, it doesn’t. GALK is one of willings Inc’s services. GALK Summer Internship is a program in which we introduce IIT students to various Japanese companies for internships" },
     { query: "Q", question: "How many interviews are there?", answer: "There are two total. The first one is a HR interview with us ( = Willings Inc. ) The second one is a technical interview with the company you may be going to for your internship." },
 
 ]
-type Query = {
-    query: string;
-    question: string;
-    answer: string;
-}
-
-type QuestionsListItemProps = {
-    Query: Query
-}
 
 
-function QuestionsListItem({ Query }: QuestionsListItemProps) {
+
+function QuestionsListItem({ Query }) {
     return (
         <div className=" w-full">
             <div className="flex gap-[10px] bg-gray-100 p-3">
