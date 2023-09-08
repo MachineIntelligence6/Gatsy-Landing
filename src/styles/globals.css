@@ -23,7 +23,9 @@
 body {
   width: 100%;
 }
-
+.primary-btn {
+  background: linear-gradient(90deg, #FFDD83 0%, #F26939 31.77%, #CF2E92 67.19%, #4C66D3 100%); ;
+}
 
 
 

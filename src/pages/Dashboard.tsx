@@ -1,7 +1,6 @@
 import Footer from "@/components/Footer";
 import React from "react";
-import { string } from "zod";
-
+import { ChevronRightIcon } from "@radix-ui/react-icons";
 
 
 export default function Dashboard() {
@@ -82,6 +81,7 @@ export default function Dashboard() {
                     </h1>
                     <img src="/images/plane.png" alt="" />
                 </div>
+                
                 <div>
                     <JobProcess
                         className="pt-8"
@@ -118,29 +118,29 @@ export default function Dashboard() {
             </div>
             <div className="flex items-center justify-center py-[80px] bg-black_light relative">
                 <div className="max-w-[990px]  w-full ">
-                <img src="/images/recruitmentprocess.png" alt="" className="w-[301px] h-[247px] object-cover object-center absolute right-[17%] top-9" />
+                    <img src="/images/recruitmentprocess.png" alt="" className="w-[301px] h-[247px] object-cover object-center absolute right-[17%] top-9" />
 
-                        <div className="text-white w-full ">
-                            <h1 className="text-white text-[32px] font-bold px-5">
-                                Flow from the start of internship to recruitment
-                            </h1>
-                            <JobProcess
-                                className="pt-[65px]"
-                                heading="Step.1"
-                                content="Participate in a 2-month Summer internship at a Japanese company"
-                            />
-                            <JobProcess
-                                className="pt-[65px]"
-                                heading="Step.2"
-                                content="After completion of the internship, you will have a chance to get the PPO from intern company."
-                            />
-                            <JobProcess
-                                className="pt-[65px]"
-                                heading="Step.3"
-                                content="Join the company in October of the following year"
-                            />
+                    <div className="text-white w-full ">
+                        <h1 className="text-white text-[32px] font-bold px-5">
+                            Flow from the start of internship to recruitment
+                        </h1>
+                        <JobProcess
+                            className="pt-[65px]"
+                            heading="Step.1"
+                            content="Participate in a 2-month Summer internship at a Japanese company"
+                        />
+                        <JobProcess
+                            className="pt-[65px]"
+                            heading="Step.2"
+                            content="After completion of the internship, you will have a chance to get the PPO from intern company."
+                        />
+                        <JobProcess
+                            className="pt-[65px]"
+                            heading="Step.3"
+                            content="Join the company in October of the following year"
+                        />
 
-                        </div>
+                    </div>
 
                     <div className="flex gap-3 pt-[60px] px-5">
                         <img src="/images/job1.png" alt="" className="w-[324px] h-[164px] object-cover object-center" />
@@ -195,18 +195,20 @@ export default function Dashboard() {
                         <img src="/images/insta8.png" alt="" width={250} height={252} className="h-full w-auto object-cover object-center aspect-square" />
 
                     </div>
-                    <div className="py-8 px-16  gap-6 flex flex-col   items-center justify-center absolute left-1/2 top-[60%] -translate-y-1/2 bg-white/70 backdrop-blur-sm -translate-x-1/2">
-                        <img src="/images/logos_instagram.png" width={115} height={33} className="h-full w-full object-cover object-center" />
-                        <img src="/icons/logoicon.png" width={170} height={57} className="h-full w-full object-cover object-center" />
-                        <p className="text-base text-black-500 pb-2">
-                            @galk_willings
-                        </p>
-                        <button className="px-6  bg-orange-800 rounded-full border">
-                            <p className="text-lg font-medium py-2">
-                                Follow Us!!
+                    <div className="  flex py-8 px-16   items-center justify-center absolute left-1/2 top-[60%] -translate-y-1/2 bg-white/70 backdrop-blur-sm -translate-x-1/2 border rounded-[30px]">
+                        <div className="flex flex-col items-center justify-center gap-6 w-[291px] ">
+                            <img src="/images/logos_instagram.png" width={115} height={33} className="h-full w-auto object-cover object-center" />
+                            <img src="/icons/logoicon.png" width={170} height={57} className="h-full w-auto object-cover object-center" />
+                            <p className="text-base text-black-500 pb-2">
+                                @galk_willings
                             </p>
-                            <p></p>
-                        </button>
+                            <button className="flex gap-6 items-center px-6 text-lg font-medium py-2 text-white rounded-full border primary-btn">
+                                Follow Us!!
+
+                                <ChevronRightIcon />
+                            </button>
+                        </div>
+
 
                     </div>
 
@@ -228,7 +230,7 @@ export default function Dashboard() {
 
                 </div>
             </div>
-                <Footer/>
+            <Footer />
 
 
 
