@@ -97,9 +97,9 @@ export default function Dashboard() {
 
 
             </div>
-            {/* <div className="flex items-center justify-center py-[80px] bg-black_light relative">
+            <div className="flex items-center justify-center py-[80px] bg-black_light relative">
                 <div className="max-w-[990px]  w-full ">
-                    <img src="/images/recruitmentprocess.png" alt="" className="w-[301px] h-[247px] object-cover object-center absolute right-[15%] top-9" />
+                    <img src="/images/recruitmentprocess.png" alt="" className="w-[301px] h-[247px] object-cover object-center absolute right-[15%] -top-12  md:top-9" />
 
                     <div className="text-white w-full pb-10">
                         <h1 className="text-white text-[32px] font-bold px-5">
@@ -112,15 +112,15 @@ export default function Dashboard() {
 
 
 
-                    <div className="flex gap-3 mt-[60px] px-5 ">
-                        <img src="/images/job1.png" alt="" className="w-[324px] h-[164px] object-cover object-center" />
-                        <img src="/images/job2.png" alt="" className="w-[324px] h-[164px] object-cover object-center" />
-                        <img src="/images/job3.png" alt="" className="w-[324px] h-[164px] object-cover object-center" />
+                    <div className="flex lg:fleex-row flex-col items-center justify-center gap-3 mt-[60px] px-5 ">
+                        <img src="/images/job1.png" alt="" className="xl:w-[324px] md:w-[250px] w-[343px] h-[174px]  md:h-[164px] object-cover aspect-square object-center" />
+                        <img src="/images/job2.png" alt="" className="xl:w-[324px] md:w-[250px] w-[343px] h-[174px]  md:h-[164px] object-cover aspect-square object-center" />
+                        <img src="/images/job3.png" alt="" className="xl:w-[324px] md:w-[250px] w-[343px] h-[174px]  md:h-[164px] object-cover aspect-square object-center" />
 
                     </div>
 
                 </div>
-            </div> */}
+            </div>
             {/* <div className="flex items-center justify-center w-full">
                 <div className="bg-white pt-[68px]  w-full max-w-[990px] px-5   pb-[80px]">
                     <div className="flex gap-7">

@@ -34,8 +34,8 @@ function Step({ content, heading }) {
                     {heading}
                 </p>
             </div>
-            <div className="absolute left-full ml-5  mt-0">
-                <p className="min-w-max text-center   text-base font-normal">
+            <div className="absolute left-full ml-5  mt-0 w-[65vw] md:w-[80vw] lg:ml-5 lg:w-[60vw] ">
+                <p className=" text-center   text-base font-normal">
                     {content}
                 </p>
             </div>
