@@ -2,7 +2,7 @@ import Footer from "../components/Footer";
 import React, { useState } from "react";
 // import { ChevronRightIcon } from "@/radix-ui/react-icons";
 import Stepper, { Stepper2 } from "../components/Stepper";
-import { Cross1Icon, TextAlignJustifyIcon } from "@radix-ui/react-icons";
+import { ChevronRightIcon, Cross1Icon, TextAlignJustifyIcon } from "@radix-ui/react-icons";
 
 
 
@@ -44,17 +44,17 @@ export default function Dashboard() {
                     <div class="xl:block hidden">
                         <img src="/icons/insta.png" alt="" />
                     </div>
-                    <div class="xl:hidden">
+                    <div class="xl:hidden pt-3">
                         <TextAlignJustifyIcon
-                            class="text-6xl font-black"
+                            class="text-6xl font-black hover:cursor-pointer"
                             onClick={toggleContent}
                         />
                         {isContentOpen && (
-                            <div class="flex z-10 flex-col min-h-screen h-[100vh] absolute gap-[50px] bg-black_light top-0 backdrop-blur-sm right-0 w-[90%]">
-                                <div class="flex justify-end pt-[25px] px-4 ">
+                            <div class="flex z-10 flex-col min-h-screen h-[100vh] absolute gap-[50px] bg-black_light top-5 backdrop-blur-sm right-0 w-[90%]">
+                                <div class="flex justify-end pt-[25px] px-4 hover:cursor-pointer">
                                     <Cross1Icon onClick={toggleContent} />
                                 </div>
-                                <div class="flex px-16">
+                                <div class="flex gap-1 px-16">
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="6" height="461" viewBox="0 0 6 461" fill="none">
                                             <path d="M3 0.333333C1.52724 0.333333 0.333333 1.52724 0.333333 3C0.333333 4.47276 1.52724 5.66667 3 5.66667C4.47276 5.66667 5.66667 4.47276 5.66667 3C5.66667 1.52724 4.47276 0.333333 3 0.333333ZM3.00002 455.333C1.52726 455.333 0.333353 456.527 0.333353 458C0.333353 459.473 1.52726 460.667 3.00002 460.667C4.47278 460.667 5.66669 459.473 5.66669 458C5.66669 456.527 4.47278 455.333 3.00002 455.333ZM2.5 3L2.50002 458L3.50002 458L3.5 3L2.5 3Z" fill="white" />
@@ -129,16 +129,19 @@ export default function Dashboard() {
                     <img src="/images/plane.png" alt="" class="lg:w-[200px] lg:h-auto w-[105px]" />
                 </div>
 
-                <div class="flex justify-start pt-12 pl-16 max-w-[990px] w-full">
+                <div class="flex justify-start pt-12 pl-16 max-w-[990px] w-full relative">
                     <Stepper2 />
+                    <img src="/images/screen.png" alt="" class="w-[207px] h-[175px] absolute left-[17%] top-[55%] md:top-[53%] lg:top-[55%] md:left-[9%]" />
+
+
                 </div>
-                <div class="max-w-[990px] pl-20 pt-12 md:pt-2 lg:pt-6 w-full">
+                <div class="max-w-[990px] md:pl-[88px] pl-20 pt-9 md:pt-2 lg:pt-6 w-full">
                     <img src="/images/screen.png" alt="" class="w-[207px] h-[175px]" />
                 </div>
             </div>
             <div class="flex items-center justify-center py-10 md:py-[80px] bg-black_light relative">
                 <div class="max-w-[990px]  w-full ">
-                    <img src="/images/recruitmentprocess.png" alt="" class="lg:w-[301px] lg:h-[247px] w-[109px] h-[102px]  absolute md:right-[3%] xl:right-[10%] right-4 -top-14  lg:top-9" />
+                    <img src="/images/recruitmentprocess.svg" alt="" class="lg:w-[301px] lg:h-[247px] w-[109px] h-[102px]  absolute md:right-[3%] xl:right-[10%] right-4 -top-14  lg:top-9" />
                     <div class="text-white w-full pb-6 md:pb-10">
                         <h1 class="text-white lg:text-[32px] text-2xl font-bold px-5">
                             Flow from the start of internship to recruitment
@@ -160,7 +163,7 @@ export default function Dashboard() {
                         <p class="md:text-[32px] text-2xl font-bold text-black_light">
                             Comment from intern
                         </p>
-                        <img src="/images/engineringteam.svg" class="md:h-[61px] md:w-[120px] w-[95px] h-[48px]" />
+                        <img src="/images/engineringteam.svg" class="md:h-[61px] md:w-[120px] w-[95px] h-[48px] -mt-3" />
                     </div>
                     <div class="pt-6 md:pt-10 flex flex-col gap-6">
                         {
@@ -173,7 +176,13 @@ export default function Dashboard() {
 
                 </div>
             </div>
-            <div class="flex items-center justify-center w-full bg-black_light ">
+            <div class="flex items-center justify-center w-full bg-black_light  relative">
+                <h1 className="text-[162px] font-bold text-gray-500 opacity-60 absolute -right-60 rotate-90 xl:block hidden">
+                    Instagram
+                </h1>
+                <h1 className="text-[162px] font-bold text-gray-500 opacity-60 absolute -left-60 -rotate-90 xl:block hidden">
+                    Instagram
+                </h1>
                 <div class="w-full max-w-[990px] px-5 pb-10 md:pb-[72px] relative">
 
                     <div class="flex md:gap-4 items-center justify-center pb-6 pt-10 md:pt-[88px] md:pb-10 w-full">
@@ -203,10 +212,10 @@ export default function Dashboard() {
                                 <p class="text-base text-black-500 pb-2">
                                     @galk_willings
                                 </p>
-                                <button class="flex gap-6 items-center px-6 text-[10px] md:text-lg font-medium py-1 md:py-2 text-white rounded-full border primary-btn">
+                                <button class="flex pr-3 py-2 pl-8 md:gap-10 gap-6  items-center md:py-[14px] md:pl-20 md:pr-6 text-[10px] md:text-lg font-medium  text-white rounded-full border primary-btn">
                                     Follow Us!!
 
-                                    {/* <ChevronRightIcon /> */}
+                                    <ChevronRightIcon />
                                 </button>
                             </div>
 

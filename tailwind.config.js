@@ -23,6 +23,7 @@ export default {
         "black-500": "#2F2F2F",
         "gray-300": "#F2F2F2",
         "gray-400": "#727272",
+        "gray-500":"#616161"
 
       },
       backdropGrayscale: {
@@ -35,7 +36,7 @@ export default {
 
         "primary-image": "url(/images/theme-bg.png)",
         "header-image": "url(/images/header.png)",
-        "primary-image-mobile": "url(/images/theme-bg-mobile.png)",
+        "primary-image-mobile": "url(/images/theme-bg-mobile.svg)",
       },
       backdropBlur: {
         'primary-image': "blur(500px)"

@@ -69,20 +69,20 @@ function Step2({ content, heading }) {
 export function Stepper2() {
     return (
         <div class="">
-            <div class="flex items-center flex-col min-h-full h-[500px]   ">
+            <div class="flex items-center flex-col min-h-full   ">
                 <Step2
                     heading="Step.1"
                     content="You will get  notification from the Placement Cell  to inform you that they are accepting applications for the GALK summer internship." />
-                <div class="flex-auto border-l-2 transition duration-500 ease-in-out border-black_light"></div>
+                <div class="flex-auto h-[88px] border-l-2 transition duration-500 ease-in-out border-black_light"></div>
                 <Step2
                     heading="Step.2"
                     content="Please register on the GALK portal in the notification. ( registration on the GALK Portal = application ) " />
-                <div class="flex-auto border-l-2 transition duration-500 ease-in-out border-black_light"></div>
+                <div class="flex-auto h-[62px] border-l-2 transition duration-500 ease-in-out border-black_light"></div>
                 <Step2
                     heading="Step.3"
                     content="Please take the Primary selection on GALK Portal.
                 Only those who pass the Primary selection will proceed to the Secondary selection."/>
-                <div class="flex-auto border-l-2 transition duration-500 ease-in-out border-black_light"></div>
+                <div class="flex-auto h-[254px] border-l-2 transition duration-500 ease-in-out border-black_light"></div>
                 <Step2
                     heading="Step.4"
                     content="Please take the Secondary selection on GALK Portal.
