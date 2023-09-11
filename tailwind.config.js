@@ -36,7 +36,7 @@ export default {
 
         "primary-image": "url(/images/theme-bg.png)",
         "header-image": "url(/images/header.png)",
-        "primary-image-mobile": "url(/images/theme-bg-mobile.svg)",
+        "primary-image-mobile": "url(/images/theme-bg-mobile.png)",
       },
       backdropBlur: {
         'primary-image': "blur(500px)"

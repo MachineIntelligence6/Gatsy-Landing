@@ -129,7 +129,7 @@ export default function Dashboard() {
                     <h1 class="md:text-[32px] text-xl  font-bold text-black_light">
                         How to get Internship?
                     </h1>
-                    <img src="/images/plane.png" alt="" class="lg:w-[200px] lg:h-auto w-[105px] -mt-10 md:-mt-0" />
+                    <img src="/images/plane.svg" alt="" class="lg:w-[200px] lg:h-auto w-[105px] -mt-10 md:-mt-0" />
                 </div>
 
                 <div class="flex justify-start pt-12 pl-16 max-w-[990px] w-full relative">
@@ -190,8 +190,8 @@ export default function Dashboard() {
                         <p class="text-2xl  md:text-[32px] font-bold text-white text-center md:text-start w-full">
                             Please follow our Instagram!
                         </p>
-                        <img src="/images/mobile.png" alt="" width={94} height={74} class="h-[74px]  w-[94px] md:block hidden" />
-                        <img src="/images/mobile.png" alt="" width={70} height={60} class="h-[60px]  w-[76px] absolute -top-7 right-13 md:hidden block" />
+                        <img src="/images/mobile.svg" alt="" width={94} height={74} class="h-[74px]  w-[94px] md:block hidden" />
+                        <img src="/images/mobile.svg" alt="" width={70} height={60} class="h-[60px]  w-[76px] absolute -top-7 right-13 md:hidden block" />
                     </div>
                     <div>
 
@@ -209,7 +209,7 @@ export default function Dashboard() {
                         <div class="flex md:py-8 md:px-16 px-8 py-4   items-center justify-center absolute left-1/2 top-1/2 -translate-y-1/2 bg-white/70 backdrop-blur-sm -translate-x-1/2 border rounded-[30px]">
                             <div class="flex flex-col items-center justify-center gap-3 md:gap-6 w-[180px] md:w-[291px] ">
                                 <img src="/images/logos_instagram.png" class="w-[60x] h-[17px] md:h-[33px] md:w-[115px] " />
-                                <img src="/icons/logoicon.png" width={170} height={57} class="h-[30px] w-[90px] md:h-[57px] md:w-[170px]" />
+                                <img src="/icons/logoicon.svg" width={170} height={57} class="h-[30px] w-[90px] md:h-[57px] md:w-[170px]" />
                                 <p class="text-base text-black-500 pb-2">
                                     @galk_willings
                                 </p>
