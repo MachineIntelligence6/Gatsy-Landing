@@ -2,7 +2,7 @@ import Footer from "../components/Footer";
 import React, { useState } from "react";
 // import { ChevronRightIcon } from "@/radix-ui/react-icons";
 import Stepper, { Stepper2 } from "../components/Stepper";
-import { ChevronRightIcon, Cross1Icon, TextAlignJustifyIcon } from "@radix-ui/react-icons";
+import { ChevronRightIcon, Cross1Icon, HamburgerMenuIcon, TextAlignJustifyIcon } from "@radix-ui/react-icons";
 
 
 
@@ -45,7 +45,7 @@ export default function Dashboard() {
                         <img src="/icons/insta.png" alt="" />
                     </div>
                     <div class="xl:hidden pt-3">
-                        <TextAlignJustifyIcon
+                        <HamburgerMenuIcon
                             class="text-6xl font-black hover:cursor-pointer"
                             onClick={toggleContent}
                         />
@@ -100,15 +100,18 @@ export default function Dashboard() {
                         What’s GALK?
                     </h1>
                     <hr class="w-[60px]  border-1 border-white_light  " />
-                    <p class="md:text-xl  text-sm font-normal text-black_light  text-center pt-6">
-                        We offer a two-month summer internship program at a Japanese company
-                        for job-seeking students of the Indian Institute of Technology.
-                    </p>
-                    <p class="md:text-xl text-sm  font-normal text-black_light max-w-[900px] w-full text-center ">
-                        There is no <span class="font-bold text-[15px] md:text-xl"> need to speak Japanese </span>and Travel, accommodation, and living expenses will be covered. <br />
-                        ( Only visa application fees and travel insurance are to be paid by the student.) <br />
-                        so all you need is <span class="font-bold text-[15px] md:text-xl">  a desire to work in Japan! </span>
-                    </p>
+                    <div>
+                        <p class="md:text-xl  text-sm font-normal text-black_light  text-center pt-6">
+                            We offer a two-month summer internship program at a Japanese company <br />
+                            for job-seeking students of the Indian Institute of Technology.
+                        </p>
+                        <p class="md:text-xl text-sm  font-normal text-black_light max-w-[900px] w-full text-center ">
+                            There is no <span class="font-bold text-[15px] md:text-xl"> need to speak Japanese </span>and Travel, accommodation, and living expenses will be covered. <br />
+                            (Only visa application fees and travel insurance are to be paid by the student.) <br />
+                            so all you need is <span class="font-bold text-[15px] md:text-xl">  a desire to work in Japan! </span>
+                        </p>
+                    </div>
+
                     <div class="flex md:flex-row flex-col md:gap-3  gap-2 pt-6 ">
                         <img src="/images/db1.png" alt="" class="xl:w-[324px] md:w-[250px] w-[343px] h-[174px]  md:h-[164px] " />
                         <img src="/images/db2.png" alt="" class="xl:w-[324px] md:w-[250px] w-[343px] h-[174px]  md:h-[164px] " />
@@ -123,26 +126,24 @@ export default function Dashboard() {
                     GALK SUMMER INTERNSHIP
                 </h1>
                 <div class="flex gap-1 items-center  max-w-[990px] px-5  w-full">
-                    <h1 class="md:text-[32px] text-2xl  font-bold text-black_light">
+                    <h1 class="md:text-[32px] text-xl  font-bold text-black_light">
                         How to get Internship?
                     </h1>
-                    <img src="/images/plane.png" alt="" class="lg:w-[200px] lg:h-auto w-[105px]" />
+                    <img src="/images/plane.png" alt="" class="lg:w-[200px] lg:h-auto w-[105px] -mt-10 md:-mt-0" />
                 </div>
 
                 <div class="flex justify-start pt-12 pl-16 max-w-[990px] w-full relative">
                     <Stepper2 />
-                    <img src="/images/screen.png" alt="" class="w-[207px] h-[175px] absolute left-[17%] top-[55%] md:top-[53%] lg:top-1/2 md:left-[9%]" />
-
-
+                    <img src="/images/screen.png" alt="" class="w-[207px] h-[175px] absolute left-[20%] top-[57%] md:top-[53%] lg:top-[54%] md:left-[9%]" />
                 </div>
-                <div class="max-w-[990px] md:pl-[88px] pl-20 pt-9 md:pt-2 lg:pt-6 w-full">
+                <div class="max-w-[990px] md:pl-[88px] pl-20 pt-14 md:pt-2 lg:pt-6 w-full">
                     <img src="/images/screen.png" alt="" class="w-[207px] h-[175px]" />
                 </div>
             </div>
             <div class="flex items-center justify-center py-10 md:py-[80px] bg-black_light relative">
                 <div class="max-w-[990px]  w-full ">
                     <img src="/images/recruitmentprocess.svg" alt="" class="lg:w-[301px] lg:h-[247px] w-[109px] h-[102px]  absolute md:right-[3%] xl:right-[10%] right-4 -top-14  lg:top-9" />
-                    <div class="text-white w-full pb-6 md:pb-10">
+                    <div class="text-white w-full pb-6 md:pb-12">
                         <h1 class="text-white lg:text-[32px] text-2xl font-bold px-5">
                             Flow from the start of internship to recruitment
                         </h1>
@@ -177,10 +178,10 @@ export default function Dashboard() {
                 </div>
             </div>
             <div class="flex items-center justify-center w-full bg-black_light  relative">
-                <h1 className="text-[162px] font-bold text-gray-500 opacity-60 absolute -right-60 rotate-90 xl:block hidden">
+                <h1 className="text-[162px] font-bold text-gray-500 opacity-60 absolute -right-[300px] rotate-90 xl:block hidden">
                     Instagram
                 </h1>
-                <h1 className="text-[162px] font-bold text-gray-500 opacity-60 absolute -left-60 -rotate-90 xl:block hidden">
+                <h1 className="text-[162px] font-bold text-gray-500 opacity-60 absolute -left-[300px] -rotate-90 xl:block hidden">
                     Instagram
                 </h1>
                 <div class="w-full max-w-[990px] px-5 pb-10 md:pb-[72px] relative">
@@ -269,9 +270,9 @@ export default function Dashboard() {
 
 
 const students = [
-    { name: "Aishwarya Chodavarapu ", college: "IIT GOA / Computer Science and Engineering", image: "/images/ash.png", content: "Firstly, I really liked the company, and the staff is very welcoming and takes excellent care of us. They frequently organise group lunches and ensure our comfort in the new environment.Secondly, I am highly satisfied with the project assigned to us. Through the valuable guidance of the staff, I have had the opportunity to expand my knowledge in the technical field. Working in this company has been an outstanding experience that will prove valuable in the future. Thirdly, it has always been my dream to work in Japan, and thanks to Willings support, that dream came true. The staff at Willings has been instrumental in assisting us with settling into Japan and resolving any issues we encountered. I am very grateful to Willings for their exceptional care and unwavering support in overcoming personal challenges.Lastly, I want to add that the Japanese people are renowned for their genuine care and exceptional discipline. Immersing myself in the Japanese work culture has not only shaped me as an individual but has also instilled in me a heightened sense of discipline and personal growth. The diligent work ethic and admirable values I've witnessed in Japan have inspired me to strive for excellence and become a better version of myself." },
+    { name: "Aishwarya Chodavarapu ", college: "IIT GOA / Computer Science and Engineering", image: "/images/ash.png", content:<>Firstly, I really liked the company, and the staff is very welcoming and takes excellent care of us. They frequently organise group lunches and ensure our comfort in the new environment.<br/>Secondly, I am highly satisfied with the project assigned to us. Through the valuable guidance of the staff, I have had the opportunity to expand my knowledge in the technical field. Working in this company has been an outstanding experience that will prove valuable in the future.<br/> Thirdly, it has always been my dream to work in Japan, and thanks to Willings support, that dream came true. The staff at Willings has been instrumental in assisting us with settling into Japan and resolving any issues we encountered. I am very grateful to Willings for their exceptional care and unwavering support in overcoming personal challenges.Lastly, I want to add that the Japanese people are renowned for their genuine care and exceptional discipline. Immersing myself in the Japanese work culture has not only shaped me as an individual but has also instilled in me a heightened sense of discipline and personal growth. The diligent work ethic and admirable values I've witnessed in Japan have inspired me to strive for excellence and become a better version of myself.</> },
     { name: "Harsh Agrawal ", college: "IIT GOA / Computer Science and Engineering", image: "/images/harash.png", content: "During my internship in Japan, I had an amazing experience, and I found the overall work environment to be enjoyable and fulfilling. The cultural immersion and exposure to a new environment were truly enriching. Japan's unique customs, traditions, and work culture offered a fresh perspective and created an excellent learning environment. The projects here a very intriguing and gives you a different exposure when compared to other places. The way team works and different aspects of corporate world is very smoothly operated here which is a treat to learn as a fresher. The mentors are very helpful and always interested in your ideas and approaches. There is freedom to choose your own path to solve the problem, which helps you grow more. Lastly, I want to express my gratitude for the exceptional support provided by Willings. From the moment I joined the program, they were providing constant support and help whenever required. The biweekly meetings and the feedback system is very helpful and that shows how concerned they are regarding our well being. All the amenities are well provided and are of top quality.Willings consistently went above and beyond to ensure a positive experience for all interns." },
-    { name: "Aishwarya Chodavarapu ", college: "IIT Guwahait / Mechanical Engineering", image: "/images/valb.png", content: "Before coming to japan I already had a great interest in Japanese culture because of my interest in anime and manga and Japanese cars. I did my internship in Kumamoto which is somewhere at outskirts of Japan but still it is a great town. I saw my dream cars every day. Which motivates me to work more hard to get them. And people of japan are very kind and helpful. I don’t even speak Japanese but still if i try to ask for help from any stranger he do his best to help me always. And people of my company are very sweet and kind. Always there to help me. Even the people who don’t speak English try there best to learn English to speak to me. So that I don’t feel left out in Japan. Willings support is best. Willings is always there to help you in any kind of way possible. You just tell Willings what you need and they will provide that very fast. Also everyone I met from Willings is so kind and helpful and treats you like a friend. You can share anything with willings" },
+    { name: "Aishwarya Chodavarapu ", college: "IIT Guwahait / Mechanical Engineering", image: "/images/valb.png", content:<> Before coming to japan I already had a great interest in Japanese culture because of my interest in anime and manga and Japanese cars. I did my internship in Kumamoto which is somewhere at outskirts of Japan but still it is a great town. I saw my dream cars every day. Which motivates me to work more hard to get them. And people of japan are very kind and helpful. I don’t even speak Japanese but still if i try to ask for help from any stranger he do his best to help me always. And people of my company are very sweet and kind. Always there to help me. Even the people who don’t speak English try there best to learn English to speak to me. So that I don’t feel left out in Japan.<br/> Willings support is best. Willings is always there to help you in any kind of way possible. You just tell Willings what you need and they will provide that very fast. Also everyone I met from Willings is so kind and helpful and treats you like a friend. You can share anything with willings </>},
 
 ]
 
@@ -281,14 +282,14 @@ function StudentListItem({ student }) {
     return (
         <div class="flex flex-col md:flex-row md:gap-4 w-full justify-center items-center md:items-start md:justify-normal">
             <img src={student.image} alt="" width={110} height={110} class="h-[110px] w-[110px] object-cover object-center aspect-square rounded" />
-            <div class="w-full x flex flex-col items-center md:items-start">
-                <p class="text-lg font-bold text-black_light">
+            <div class="w-full  flex flex-col items-center md:items-start">
+                <p class="text-base md:text-lg font-bold text-black_light">
                     {student.name}
                 </p>
-                <p class="text-base font-bold text-center text-gray-200  md:pt-[6px]">
+                <p class="text-sm md:text-base font-bold text-center text-gray-200  md:pt-[6px]">
                     {student.college}
                 </p>
-                <p class="text-sm font-normal text-black_light pt-[12px]">
+                <p class="text-sm font-normal text-black_light pt-[12px] ">
                     {student.content}
 
                 </p>

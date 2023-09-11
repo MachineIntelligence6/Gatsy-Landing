@@ -3,15 +3,15 @@
 export default function Stepper() {
     return (
         <div class="">
-            <div class="flex items-center flex-col min-h-full h-[251px] ">
+            <div class="flex items-center flex-col min-h-full md:h-[251px]  ">
                 <Step
                     heading="Step.1"
                     content="Participate in a 2-month Summer internship at a Japanese company" />
-                <div class="flex-auto border-l-2 transition duration-500 ease-in-out border-gray-300"></div>
+                <div class="flex-auto border-l-2 h-16 transition duration-500 ease-in-out border-gray-300"></div>
                 <Step
                     heading="Step.2"
                     content="After completion of the internship, you will have a chance to get the PPO from intern company." />
-                <div class="flex-auto border-l-2 transition duration-500 ease-in-out border-gray-300"></div>
+                <div class="flex-auto border-l-2 transition h-[75px] duration-500 ease-in-out border-gray-300"></div>
                 <Step
                     heading="Step.3"
                     content="Join the company in October of the following year" />
@@ -80,13 +80,21 @@ export function Stepper2() {
                 <div class="flex-auto h-[62px] border-l-2 transition duration-500 ease-in-out border-black_light"></div>
                 <Step2
                     heading="Step.3"
-                    content="Please take the Primary selection on GALK Portal.
-                Only those who pass the Primary selection will proceed to the Secondary selection."/>
+                    content={
+                        <>
+                            Please take the Primary selection on GALK Portal.<br />
+                            Only those who pass the Primary selection will proceed to the Secondary selection."
+                        </>
+                    } />
                 <div class="flex-auto h-[254px] border-l-2 transition duration-500 ease-in-out border-black_light"></div>
                 <Step2
                     heading="Step.4"
-                    content="Please take the Secondary selection on GALK Portal.
-                    Only those who pass the Secondary selection will  be able to participate in an internship at a Japanese company."/>
+                    content={
+                        <>
+                            Please take the Secondary selection on GALK Portal.<br />
+                            Only those who pass the Secondary selection will  be able to participate in an internship at a Japanese company."
+                        </>
+                    } />
                 <div class="max-w-[835px] px-5 w-full pt-2">
                 </div>
 
