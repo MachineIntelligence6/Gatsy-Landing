@@ -131,7 +131,7 @@ export default function Dashboard() {
 
                 <div class="flex justify-start pt-12 pl-16 max-w-[990px] w-full relative">
                     <Stepper2 />
-                    <img src="/images/screen.png" alt="" class="w-[207px] h-[175px] absolute left-[17%] top-[55%] md:top-[53%] lg:top-[55%] md:left-[9%]" />
+                    <img src="/images/screen.png" alt="" class="w-[207px] h-[175px] absolute left-[17%] top-[55%] md:top-[53%] lg:top-1/2 md:left-[9%]" />
 
 
                 </div>
