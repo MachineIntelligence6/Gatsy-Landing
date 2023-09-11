@@ -4,31 +4,31 @@
 
 export default function Footer(){
     return(
-        <footer className="pt-[80px] pb-[83px] flex items-center justify-center bg-gray-300">
-                <div className="w-full max-w-[990px] px-5 flex flex-col justify-center items-center gap-8">
+        <footer class="py-10 md:pt-[80px] md:pb-[83px] flex items-center justify-center bg-gray-300">
+                <div class="w-full max-w-[990px] px-5 flex flex-col justify-center items-center gap-8">
                     <div>
-                        <img src="/icons/logoicon.png" width={156} height={52} className="h-full w-auto aspect-square object-cover object-center" />
+                        <img src="/icons/logoicon.png" width={156} height={52} class="h-full w-auto aspect-square object-cover object-center" />
 
                     </div>
-                    <div className="flex justify-between  gap-9 ">
-                        <p className="text-black_light text-lg font-medium">
+                    <div class="flex lg:justify-between gap-9  flex-wrap justify-center">
+                        <p class="text-black_light text-base md:text-lg font-medium">
                             What’s GALK
-                        </p>
-                        <p className="text-black_light text-lg font-medium">
+                        </p>       
+                        <p class="text-black_light text-base md:text-lg font-medium">
                             How to get Internship
                         </p>
-                        <p className="text-black_light text-lg font-medium">
+                        <p class="text-black_light text-base md:text-lg font-medium">
                             Flow to recruitment
                         </p>
-                        <p className="text-black_light text-lg font-medium">
+                        <p class="text-black_light text-base md:text-lg font-medium">
                             Comment from intern
                         </p>
-                        <p className="text-black_light text-lg font-medium">
+                        <p class="text-black_light text-base md:text-lg font-medium">
                             FAQ
                         </p>
                     </div>
-                    <img src="/icons/instafooter.png" alt="" width={40} height={40} className="h-full  w-auto aspect-square object-cover object-center" />
-                    <p className="text-xs font-medium text-gray-400">
+                    <img src="/icons/instafooter.png" alt="" width={40} height={40} class="h-full  w-auto aspect-square object-cover object-center" />
+                    <p class="text-xs font-medium text-gray-400">
                         © 2023 willings inc.
                     </p>
                 </div>

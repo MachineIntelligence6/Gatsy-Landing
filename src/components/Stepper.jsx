@@ -2,7 +2,7 @@
 
 export default function Stepper() {
     return (
-        <div className="">
+        <div class="">
             <div class="flex items-center flex-col min-h-full h-[251px] ">
                 <Step
                     heading="Step.1"
@@ -29,13 +29,13 @@ function Step({ content, heading }) {
 
                 </div>
             </div>
-            <div className="absolute right-full   mt-0 mr-2">
-                <p className="min-w-max text-center ml-5  text-base font-bold">
+            <div class="absolute right-full mt-0 mr-2">
+                <p class=" ml-5 lg:text-base text-xs font-bold">
                     {heading}
                 </p>
             </div>
-            <div className="absolute left-full ml-5  mt-0 w-[65vw] md:w-[80vw] lg:ml-5 lg:w-[60vw] ">
-                <p className=" text-center   text-base font-normal">
+            <div class="absolute left-full ml-5 mt-3 md:mt-0 w-[65vw] md:w-[80vw] lg:ml-5 lg:w-[55vw] ">
+                <p class="lg:text-base text-xs font-normal">
                     {content}
                 </p>
             </div>
@@ -51,13 +51,13 @@ function Step2({ content, heading }) {
 
                 </div>
             </div>
-            <div className="absolute right-full   mt-0 mr-2">
-                <p className="min-w-max  ml-5 text-sm md:text-base font-bold  ">
+            <div class="absolute right-full mt-0 mr-2">
+                <p class="ml-5 text-sm md:text-base font-bold  ">
                     {heading}
                 </p>
             </div>
-            <div className="absolute top-0 left-full ml-3 w-[65vw] md:w-[80vw] lg:ml-5 lg:w-[60vw]   lg:mt-0">
-                <p className="  text-xs  lg:text-base font-normal w-full">
+            <div class="absolute top-0 left-full ml-3 w-[65vw] md:w-[80vw] lg:ml-5 lg:w-[60vw]   lg:mt-0">
+                <p class="text-xs  lg:text-base font-normal w-full">
                     {content}
                 </p>
             </div>
@@ -68,7 +68,7 @@ function Step2({ content, heading }) {
 
 export function Stepper2() {
     return (
-        <div className="">
+        <div class="">
             <div class="flex items-center flex-col min-h-full h-[500px]   ">
                 <Step2
                     heading="Step.1"
@@ -87,11 +87,18 @@ export function Stepper2() {
                     heading="Step.4"
                     content="Please take the Secondary selection on GALK Portal.
                     Only those who pass the Secondary selection will  be able to participate in an internship at a Japanese company."/>
-                <div className="max-w-[835px] px-5 w-full pt-2">
+                <div class="max-w-[835px] px-5 w-full pt-2">
                 </div>
 
             </div>
-            
+
         </div>
     )
 }
+
+
+
+
+
+
+
