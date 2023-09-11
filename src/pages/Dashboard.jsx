@@ -14,7 +14,7 @@ export default function Dashboard() {
     };
 
     return (
-        <div class="overflow-auto max-h-[calc(100vh_-100px)] ">
+        <div class="overflow-y-auto  max-h-full  overflow-hidden">
             <div class="bg-primary-image-mobile md:bg-primary-image h-[440px] md:h-[700px] relative">
                 {/* section  */}
                 <nav class="flex text-white   w-full justify-between px-5  md:px-12 backdrop-blur-sm md:h-[181px] h-[150px] py-5 relative">
@@ -46,7 +46,7 @@ export default function Dashboard() {
                     </div>
                     <div class="xl:hidden pt-3">
                         <HamburgerMenuIcon
-                            class="text-6xl font-black hover:cursor-pointer"
+                            class=" font-black h-[23px] w-[35px] hover:cursor-pointer"
                             onClick={toggleContent}
                         />
                         {isContentOpen && (
