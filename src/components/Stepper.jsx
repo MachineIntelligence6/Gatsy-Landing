@@ -8,11 +8,11 @@ export default function Stepper() {
                 <Step
                     heading="Step.1"
                     content="Participate in a 2-month Summer internship at a Japanese company" />
-                <div class="flex-auto border-l-2  transition duration-500 ease-in-out border-gray-300 h-[50px] md:h-[75px]"></div>
+                <div class="flex-auto border-l-2  transition duration-500 ease-in-out border-gray-300 h-[60px] md:h-[75px]"></div>
                 <Step
                     heading="Step.2"
                     content="After completion of the internship, you will have a chance to get the PPO from intern company." />
-                <div class="flex-auto border-l-2 transition h-[60px] md:h-[75px] duration-500 ease-in-out border-gray-300"></div>
+                <div class="flex-auto border-l-2 transition h-[80px] md:h-[75px] duration-500 ease-in-out border-gray-300"></div>
                 <Step
                     heading="Step.3"
                     content="Join the company in October of the following year" />

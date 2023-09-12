@@ -7,7 +7,7 @@ export default function Footer() {
         <footer class="py-10 md:pt-[80px] md:pb-[83px] flex items-center justify-center bg-gray-300">
             <div class="w-full max-w-[990px] px-5 flex flex-col justify-center items-center gap-[24px] md:gap-[32px]">
                 <div>
-                    <img src="/icons/logoicon.png" width={156} height={52} class="h-full w-auto aspect-square object-cover object-center" />
+                    <img src="/images/logoicon.svg" width={156} height={52} class="h-full w-auto aspect-square object-cover object-center" />
 
                 </div>
                 <div class="flex lg:justify-between gap-[16px] md:gap-[36px]  flex-wrap justify-center">
