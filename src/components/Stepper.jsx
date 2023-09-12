@@ -36,12 +36,12 @@ function Step({ content, heading }) {
                 </div>
             </div>
             <div class="absolute right-full mt-0 mr-2">
-                <p class=" ml-5 lg:text-base text-xs font-bold">
+                <p class=" ml-5 lg:text-[16px] text-[12px] font-bold">
                     {heading}
                 </p>
             </div>
             <div class="absolute left-full ml-5 mt-0.5 md:mt-0 w-[58vw] md:w-[80vw] lg:ml-5 lg:w-[55vw] ">
-                <p class="lg:text-base text-xs font-normal">
+                <p class="lg:text-[16px] text-[12px] font-normal">
                     {content}
                 </p>
             </div>
@@ -64,12 +64,12 @@ function Step2({ content, heading }) {
                 </div>
             </div>
             <div class="absolute right-full mt-0 mr-2">
-                <p class="md:ml-5 text-xs md:text-base font-bold">
+                <p class="md:ml-5 text-[12px] md:text-[16px] font-bold">
                     {heading}
                 </p>
             </div>
             <div class="absolute top-0 left-full ml-3 w-[67vw] md:w-[80vw] lg:ml-5 lg:w-[60vw]   lg:mt-0">
-                <p class="text-sm lg:text-base font-normal w-full">
+                <p class="text-[14px] lg:text-[16px] font-normal w-full">
                     {content}
                 </p>
             </div>

@@ -140,10 +140,10 @@ export default function Dashboard() {
                         </div>
                         <div class="flex justify-start mt-5 md:mt-10 pl-16 w-full relative">
                             <Stepper2 />
-                            <img src="/images/screen.png" alt="" class="w-[220px] h-auto absolute left-[18%] top-[62%] md:top-[53%] lg:top-[50%] md:left-[9.5%] lg:left-[7.5%]" />
+                            <img src="/images/screen.svg" alt="" class="w-[220px] h-auto absolute left-[18%] top-[62%] md:top-[53%] lg:top-[50%] md:left-[9.5%] lg:left-[7.5%]" />
                         </div>
                         <div class="md:pl-[72px] lg:pl-[80px] pl-[70px] mt-24 md:mt-14 xl:mt-10 w-full">
-                            <img src="/images/screen2.png" alt="" class="w-[220px] h-auto" />
+                            <img src="/images/screen2.svg" alt="" class="w-[220px] h-auto" />
                         </div>
                     </div>
                 </div>
@@ -215,7 +215,7 @@ export default function Dashboard() {
                                 <p class="text-base text-black-500 pb-2">
                                     @galk_willings
                                 </p>
-                                <button class="h-[30px] lg:h-[57px] px-5 gap-6 flex items-center justify-center md:py-[14px] text-[10px] md:text-[18px]  relative font-normal  text-white rounded-full border primary-btn w-full">
+                                <button class="h-[30px] lg:h-[57px] px-[20px] gap-[24px] flex items-center justify-center md:py-[14px] text-[10px] md:text-[18px]  relative font-normal  text-white rounded-full border primary-btn w-full">
                                     Follow Us!!
                                     <ChevronRightIcon className="w-4 h-4 absolute right-3 lg:right-6" />
                                 </button>
@@ -237,7 +237,7 @@ export default function Dashboard() {
                         </p>
                         <img src="/images/faq.png" alt="" class="w-[49px] h-[37px] -mt-[10px] block md:hidden" />
                     </div>
-                    <div className="space-y-5">
+                    <div className="space-y-[20px]">
                         {
                             Queries.map((Query) => (
                                 <QuestionsListItem Query={Query} />

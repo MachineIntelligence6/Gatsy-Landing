@@ -11,24 +11,24 @@ export default function Footer() {
 
                 </div>
                 <div class="flex lg:justify-between gap-[16px] md:gap-[36px]  flex-wrap justify-center">
-                    <p class="text-black_light text-base md:text-lg font-medium">
+                    <p class="text-black_light text-[16px] md:text-[18px] font-medium">
                         What’s GALK
                     </p>
-                    <p class="text-black_light text-base md:text-lg font-medium">
+                    <p class="text-black_light text-[16px] md:text-[18px] font-medium">
                         How to get Internship
                     </p>
-                    <p class="text-black_light text-base md:text-lg font-medium">
+                    <p class="text-black_light text-[16px] md:text-[18px] font-medium">
                         Flow to recruitment
                     </p>
-                    <p class="text-black_light text-base md:text-lg font-medium">
+                    <p class="text-black_light text-[16px] md:text-[18px] font-medium">
                         Comment from intern
                     </p>
-                    <p class="text-black_light text-base md:text-lg font-medium">
+                    <p class="text-black_light text-[16px] md:text-[18px] font-medium">
                         FAQ
                     </p>
                 </div>
                 <img src="/icons/instafooter.png" alt="" width={40} height={40} class="h-full  w-auto aspect-square object-cover object-center" />
-                <p class="text-xs font-medium text-gray-400">
+                <p class="text-[12px] font-medium text-gray-400">
                     © 2023 willings inc.
                 </p>
             </div>
