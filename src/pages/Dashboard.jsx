@@ -15,7 +15,7 @@ function Header() {
     return (
         <>
             <header className="w-full">
-                <nav class="text-white w-full backdrop-blur-sm md:h-[181px] h-[140px] pl-4 pr-2 md:px-0 py-4 md:py-5 relative">
+                <nav class="text-white w-full backdrop-blur-sm md:h-[181px] h-[140px] pl-4 pr-3 md:px-0 py-4 md:py-5 relative">
                     <div className="w-full flex items-center justify-between gap-[126px] md:px-14 lg:pe-24">
                         <div class="">
                             <img src="/images/headerlogo.svg" alt="" className="w-[71px] md:w-[117px]" />
@@ -130,7 +130,7 @@ export default function Dashboard() {
                 <h1 class="max-w-[1050px] xl:text-[80px] text-[26px] text-center leading-none font-bold text-gray-100 w-full z-[3] px-2 md:px-0">
                     GALK SUMMER INTERNSHIP
                 </h1>
-                <div className=" w-full md:px-2 pt-10 md:pt-20 bg-gray-100 pb-[40px] md:pb-[74px] -mt-1.5 xl:-mt-3">
+                <div className=" w-full md:px-2 pt-10 md:pt-20 bg-gray-100 pb-[40px] md:pb-[74px] -mt-[5px] md:-mt-1.5 xl:-mt-3">
                     <div className="max-w-[1050px] mx-auto">
                         <div class="flex gap-1 items-center px-4 md:px-5 py-0 w-fit relative">
                             <h1 class="text-[24px] md:text-[32px] md:leading-[100%] font-bold text-black_light">
@@ -172,7 +172,7 @@ export default function Dashboard() {
                         <p class="md:text-[32px] text-[24px]  font-bold text-black_light">
                             Comment from intern
                         </p>
-                        <img src="/images/engineringteam.svg" class="md:h-[61px] md:w-[120px] w-[95px] h-[48px] -mt-3" />
+                        <img src="/images/engineringteam.svg" class="md:h-[61px] md:w-[120px] w-[95px] h-[48px] -mt-3 ml-[2px] md:ml-0" />
                     </div>
                     <div class="pt-5 md:pt-3 flex flex-col gap-6">
                         {
@@ -212,7 +212,7 @@ export default function Dashboard() {
                             <div class="flex flex-col items-center justify-center gap-3 md:gap-6 w-[180px] md:w-[291px] ">
                                 <img src="/images/logos_instagram.png" class="w-[60x] h-[17px] md:h-[33px] md:w-[115px] " />
                                 <img src="/icons/logoicon.svg" width={170} height={57} class="h-[30px] w-[90px] md:h-[57px] md:w-[170px]" />
-                                <p class="text-base text-black-500 pb-2">
+                                <p class="text-[16px] text-black-500 pb-2">
                                     @galk_willings
                                 </p>
                                 <button class="h-[30px] lg:h-[57px] px-[20px] gap-[24px] flex items-center justify-center md:py-[14px] text-[10px] md:text-[18px]  relative font-normal  text-white rounded-full border primary-btn w-full">
@@ -334,16 +334,16 @@ const Queries = [
 function QuestionsListItem({ Query }) {
     return (
         <div class=" w-full">
-            <div class="flex items-start gap-[10px] bg-gray-100 p-3">
+            <div class="flex items-center md:items-start gap-[10px] bg-gray-100 p-3">
                 <p class="text-[20px]  font-bold text-black_light">
                     {Query.query}
                 </p>
-                <p class="text-base font-medium text-black_light mt-1">
+                <p class="text-[16px] font-medium text-black_light mt-1">
                     {Query.question}
                 </p>
 
             </div>
-            <div class="pt-4   md:pl-9 max-w-[940px]">
+            <div class="pt-4 md:pl-9 max-w-[940px]">
                 <p class="text-[15px] font-normal ">
                     {Query.answer}
                 </p>

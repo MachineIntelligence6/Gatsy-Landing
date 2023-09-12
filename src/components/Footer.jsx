@@ -27,7 +27,7 @@ export default function Footer() {
                         FAQ
                     </p>
                 </div>
-                <img src="/icons/instafooter.png" alt="" width={40} height={40} class="h-full  w-auto aspect-square object-cover object-center" />
+                <img src="/images/instafooter.svg" alt="" width={40} height={40} class="h-full  w-auto aspect-square object-cover object-center" />
                 <p class="text-[12px] font-medium text-gray-400">
                     © 2023 willings inc.
                 </p>
