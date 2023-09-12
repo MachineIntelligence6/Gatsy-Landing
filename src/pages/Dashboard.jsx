@@ -276,6 +276,11 @@ const students = [
 
 ]
 
+// type StudentListItemProps={
+//     name:String,
+//     college:String,
+//     content:React.ReactNode,
+// }
 
 
 function StudentListItem({ student }) {
@@ -307,7 +312,11 @@ const Queries = [
 
 ]
 
-
+// type QuestionsListItemProps={
+//     query:String,
+//     question:String,
+//     answer:String,
+// }
 
 function QuestionsListItem({ Query }) {
     return (

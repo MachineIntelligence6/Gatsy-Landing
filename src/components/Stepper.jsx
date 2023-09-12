@@ -1,3 +1,4 @@
+import React from "react"
 
 
 export default function Stepper() {
@@ -20,6 +21,11 @@ export default function Stepper() {
     )
 }
 
+
+// type Step={
+//     heading:String,
+//     content:React.ReactNode,
+// }
 function Step({ content, heading }) {
     return (
         <div class="flex items-center relative text-white aspect-square ">
@@ -42,6 +48,12 @@ function Step({ content, heading }) {
         </div>
     )
 }
+
+
+// type Step2Props={
+//     heading:String,
+//     content:React.ReactNode,
+// }
 function Step2({ content, heading }) {
     return (
         <div class="flex items-center relative text-black_light aspect-square ">
