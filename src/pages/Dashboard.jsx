@@ -127,7 +127,7 @@ export default function Dashboard() {
                 </div>
             </section>
             <section class="w-full flex flex-col justify-center items-center overflow-x-hidden mt-[40px] md:mt-[101px]">
-                <h1 class="max-w-[1050px] xl:text-[80px] text-[26px] text-center leading-none font-bold text-gray-100 w-full z-[3] px-2 md:px-0">
+                <h1 class="max-w-[1050px] xl:text-[80px] text-[26px] text-center leading-none font-semibold text-gray-100 w-full z-[3] px-2 md:px-0">
                     GALK SUMMER INTERNSHIP
                 </h1>
                 <div className=" w-full md:px-2 pt-10 md:pt-20 bg-gray-100 pb-[40px] md:pb-[74px] -mt-[5px] md:-mt-1.5 xl:-mt-3">
@@ -159,10 +159,10 @@ export default function Dashboard() {
                     <div class="flex justify-left pl-16 md:pl-[78px] mt-[24px] md:mt-[40px]">
                         <Stepper />
                     </div>
-                    <div class="flex md:flex-row flex-col items-center justify-center gap-3 mt-9  md:mt-[60px] px-4 md:px-5 ">
-                        <img src="/images/job1.png" alt="" class="xl:w-[324px] md:w-[250px] w-[343px] h-[164px]  md:h-[164px] object-cover aspect-square object-center" />
-                        <img src="/images/job2.png" alt="" class="xl:w-[324px] md:w-[250px] w-[343px] h-[164px]  md:h-[164px] object-cover aspect-square object-center" />
-                        <img src="/images/job3.png" alt="" class="xl:w-[324px] md:w-[250px] w-[343px] h-[164px]  md:h-[164px] object-cover aspect-square object-center" />
+                    <div class="flex md:flex-row flex-col md:items-center justify-center gap-3 mt-9  md:mt-[60px] px-5 ">
+                        <img src="/images/job1.png" alt="" class="xl:w-[324px] md:w-[250px] w-[324px] h-[164px]  md:h-[164px] object-cover aspect-square object-center" />
+                        <img src="/images/job2.png" alt="" class="xl:w-[324px] md:w-[250px] w-[324px] h-[164px]  md:h-[164px] object-cover aspect-square object-center" />
+                        <img src="/images/job3.png" alt="" class="xl:w-[324px] md:w-[250px] w-[324px] h-[164px]  md:h-[164px] object-cover aspect-square object-center" />
                     </div>
                 </div>
             </section>

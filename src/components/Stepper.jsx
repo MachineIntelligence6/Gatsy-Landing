@@ -40,8 +40,8 @@ function Step({ content, heading }) {
                     {heading}
                 </p>
             </div>
-            <div class="absolute left-full ml-5 mt-0.5 md:mt-0 w-[58vw] md:w-[80vw] lg:ml-5 lg:w-[55vw] ">
-                <p class="lg:text-[16px] text-[12px] font-normal">
+            <div class="absolute left-full ml-5 mt-0.5 md:mt-0 w-[64vw] md:w-[80vw] lg:ml-5 lg:w-[55vw] ">
+                <p class="lg:text-[16px] text-[14px] font-normal">
                     {content}
                 </p>
             </div>
@@ -84,7 +84,7 @@ export function Stepper2() {
             <Step2
                 heading="Step.1"
                 content="You will get  notification from the Placement Cell  to inform you that they are accepting applications for the GALK summer internship." />
-            <div class="flex-auto h-[100px] md:h-[88px] border-l-2 transition duration-500 ease-in-out border-black_light"></div>
+            <div class="flex-auto h-[80px] md:h-[88px] border-l-2 transition duration-500 ease-in-out border-black_light"></div>
             <Step2
                 heading="Step.2"
                 content="Please register on the GALK portal in the notification. ( registration on the GALK Portal = application ) " />
