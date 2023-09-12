@@ -42,10 +42,11 @@ function Header() {
                             <img src="/icons/insta.png" alt="" />
                         </a>
                         <div class="xl:hidden">
-                            <HamburgerMenuIcon
+                            {/* <HamburgerMenuIcon
                                 className=" font-black h-[40px] w-[50px] hover:cursor-pointer"
                                 onClick={toggleContent}
-                            />
+                            /> */}
+                            <img src="/images/menu.svg" alt="" className="w-[35px] h-auto" onClick={toggleContent} />
                         </div>
                     </div>
                     <div class="flex flex-col items-center justify-center -mt-[66px] md:-mt-14 gap-[9px] absolute top-full left-1/2 text-center -translate-x-1/2 w-full">
@@ -269,17 +270,19 @@ export default function Dashboard() {
 
 
 const students = [
-    { name: "Aishwarya Chodavarapu ", college: "IIT GOA / Computer Science and Engineering", image: "/images/ash.png", content: <>Firstly, I really liked the company, and the staff is very welcoming and takes excellent care of us. They frequently organise group lunches and ensure our comfort in the new environment.<br />Secondly, I am highly satisfied with the project assigned to us. Through the valuable guidance of the staff, I have had the opportunity to expand my knowledge in the technical field. Working in this company has been an outstanding experience that will prove valuable in the future.<br /> Thirdly, it has always been my dream to work in Japan, and thanks to Willings support, that dream came true. The staff at Willings has been instrumental in assisting us with settling into Japan and resolving any issues we encountered. I am very grateful to Willings for their exceptional care and unwavering support in overcoming personal challenges. <br /> Lastly, I want to add that the Japanese people are renowned for their genuine care and exceptional discipline. Immersing myself in the Japanese work culture has not only shaped me as an individual but has also instilled in me a heightened sense of discipline and personal growth. The diligent work ethic and admirable values I've witnessed in Japan have inspired me to strive for excellence and become a better version of myself.</> },
+    { name: "Aishwarya Chodavarapu ", college: "IIT GOA / Computer Science and Engineering", image: "/images/ash.png", image1:"/images/ashm.png", content: <>Firstly, I really liked the company, and the staff is very welcoming and takes excellent care of us. They frequently organise group lunches and ensure our comfort in the new environment.<br />Secondly, I am highly satisfied with the project assigned to us. Through the valuable guidance of the staff, I have had the opportunity to expand my knowledge in the technical field. Working in this company has been an outstanding experience that will prove valuable in the future.<br /> Thirdly, it has always been my dream to work in Japan, and thanks to Willings support, that dream came true. The staff at Willings has been instrumental in assisting us with settling into Japan and resolving any issues we encountered. I am very grateful to Willings for their exceptional care and unwavering support in overcoming personal challenges. <br /> Lastly, I want to add that the Japanese people are renowned for their genuine care and exceptional discipline. Immersing myself in the Japanese work culture has not only shaped me as an individual but has also instilled in me a heightened sense of discipline and personal growth. The diligent work ethic and admirable values I've witnessed in Japan have inspired me to strive for excellence and become a better version of myself.</> },
     {
         name: "Harsh Agrawal ",
         college: "IIT Guwahait / Mechanical Engineering",
         image: "/images/harash.png",
+        image1:"/images/harashm.png",
         content: <span className="text-[14px] md:text-[16px]">During my internship in Japan, I had an amazing experience, and I found the overall work environment to be enjoyable and fulfilling. The cultural immersion and exposure to a new environment were truly enriching. Japan's unique customs, traditions, and work culture offered a fresh perspective and created an excellent learning environment. The projects here a very intriguing and gives you a different exposure when compared to other places. The way team works and different aspects of corporate world is very smoothly operated here which is a treat to learn as a fresher. The mentors are very helpful and always interested in your ideas and approaches. There is freedom to choose your own path to solve the problem, which helps you grow more. Lastly, I want to express my gratitude for the exceptional support provided by Willings. From the moment I joined the program, they were providing constant support and help whenever required. The biweekly meetings and the feedback system is very helpful and that shows how concerned they are regarding our well being. All the amenities are well provided and are of top quality.Willings consistently went above and beyond to ensure a positive experience for all interns.</span>
     },
     {
         name: "Vaibhav ",
         college: "IIT Ropar / Computer science",
         image: "/images/valb.png",
+        image1:"/images/valbm.png",
         content: <span className="text-[14px] md:text-[16px]"> Before coming to japan I already had a great interest in Japanese culture because of my interest in anime and manga and Japanese cars. I did my internship in Kumamoto which is somewhere at outskirts of Japan but still it is a great town. I saw my dream cars every day. Which motivates me to work more hard to get them. And people of japan are very kind and helpful. I don’t even speak Japanese but still if i try to ask for help from any stranger he do his best to help me always. And people of my company are very sweet and kind. Always there to help me. Even the people who don’t speak English try there best to learn English to speak to me. So that I don’t feel left out in Japan.<br /> Willings support is best. Willings is always there to help you in any kind of way possible. You just tell Willings what you need and they will provide that very fast. Also everyone I met from Willings is so kind and helpful and treats you like a friend. You can share anything with willings </span>
     },
 
@@ -295,7 +298,8 @@ const students = [
 function StudentListItem({ student }) {
     return (
         <div class="flex flex-col md:flex-row md:gap-4 w-full justify-center items-center md:items-start md:justify-normal">
-            <img src={student.image} alt="" width={110} height={110} class="h-auto w-[110px] mt-2 object-cover object-center aspect-square rounded" />
+            <img src={student.image} alt="" width={110} height={110} class="h-auto w-[110px] mt-2 object-cover object-center aspect-square rounded md:block hidden" />
+            <img src={student.image1} alt="" width={110} height={110} class="h-auto w-[110px] mt-2 object-cover object-center aspect-square rounded  block md:hidden" />
             <div class="w-full  flex flex-col items-center md:items-start ">
                 <p class="text-base md:text-[18px]  font-bold text-black_light">
                     {student.name}
