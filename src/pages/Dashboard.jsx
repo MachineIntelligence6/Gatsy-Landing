@@ -6,197 +6,198 @@ import { ChevronRightIcon, Cross1Icon, HamburgerMenuIcon, TextAlignJustifyIcon }
 
 
 
-export default function Dashboard() {
+function Header() {
     const [isContentOpen, setIsContentOpen] = useState(false);
 
     const toggleContent = () => {
         setIsContentOpen(!isContentOpen);
     };
-
     return (
-        <div class="overflow-y-auto  max-h-full  overflow-hidden">
-            <div class="bg-primary-image-mobile md:bg-primary-image h-[440px] md:h-[700px] relative">
-                {/* section  */}
-                <nav class="flex text-white   w-full justify-between px-5  md:px-12 backdrop-blur-sm md:h-[181px] h-[150px] py-5 relative">
-                    <div class="flex items-center gap-[6px] h-10  ">
-                        <img src="/images/logo.png" alt="" class="w-[23px] h-[23px] md:w-[38px] md:h-[38px] aspect-square" />
-                        <img src="/images/logo_2.png" alt="" class="w-[41px] h-[17px] md:w-[68px] md:h-[29px]" />
+        <>
+            <header className="w-full">
+                <nav class="text-white w-full backdrop-blur-sm md:h-[181px] h-[140px] pl-4 pr-2 md:px-0 py-4 md:py-5 relative">
+                    <div className="w-full flex items-center justify-between gap-[126px] md:px-14 lg:pe-24">
+                        <div class="">
+                            <img src="/images/headerlogo.svg" alt="" className="w-[71px] md:w-[117px]" />
+                        </div>
 
+                        <div class="xl:flex items-start justify-between gap-[50px] hidden">
+                            <a href="#" class="text-white text-[18px] font-normal">
+                                What’s GALK
+                            </a>
+                            <a href="#" class="text-white text-[18px] font-normal">
+                                How to get Internship
+                            </a>
+                            <a href="#" class="text-white text-[18px] font-normal">
+                                Flow to recruitment
+                            </a>
+                            <a href="#" class="text-white text-[18px] font-normal">
+                                Comment from intern
+                            </a>
+                            <a href="#" class="text-white text-[18px] font-normal">
+                                FAQ
+                            </a>
+                        </div>
+                        <a href="#" class="xl:block hidden">
+                            <img src="/icons/insta.png" alt="" />
+                        </a>
+                        <div class="xl:hidden">
+                            <HamburgerMenuIcon
+                                className=" font-black h-[40px] w-[50px] hover:cursor-pointer"
+                                onClick={toggleContent}
+                            />
+                        </div>
                     </div>
-
-                    <div class="xl:flex justify-between pt-2  gap-[50px] hidden">
-                        <p class="text-white text-lg font-medium">
-                            What’s GALK
-                        </p>
-                        <p class="text-white text-lg font-medium">
-                            How to get Internship
-                        </p>
-                        <p class="text-white text-lg font-medium">
-                            Flow to recruitment
-                        </p>
-                        <p class="text-white text-lg font-medium">
-                            Comment from intern
-                        </p>
-                        <p class="text-white text-lg font-medium">
-                            FAQ
-                        </p>
-                    </div>
-                    <div class="xl:block hidden">
-                        <img src="/icons/insta.png" alt="" />
-                    </div>
-                    <div class="xl:hidden pt-3">
-                        <HamburgerMenuIcon
-                            class=" font-black h-[23px] w-[35px] hover:cursor-pointer"
-                            onClick={toggleContent}
-                        />
-                        {isContentOpen && (
-                            <div class="flex z-10 flex-col min-h-screen h-[100vh] absolute gap-[50px] bg-black_light top-5 backdrop-blur-sm right-0 w-[90%]">
-                                <div class="flex justify-end pt-[25px] px-4 hover:cursor-pointer">
-                                    <Cross1Icon onClick={toggleContent} />
-                                </div>
-                                <div class="flex gap-1 px-16">
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="461" viewBox="0 0 6 461" fill="none">
-                                            <path d="M3 0.333333C1.52724 0.333333 0.333333 1.52724 0.333333 3C0.333333 4.47276 1.52724 5.66667 3 5.66667C4.47276 5.66667 5.66667 4.47276 5.66667 3C5.66667 1.52724 4.47276 0.333333 3 0.333333ZM3.00002 455.333C1.52726 455.333 0.333353 456.527 0.333353 458C0.333353 459.473 1.52726 460.667 3.00002 460.667C4.47278 460.667 5.66669 459.473 5.66669 458C5.66669 456.527 4.47278 455.333 3.00002 455.333ZM2.5 3L2.50002 458L3.50002 458L3.5 3L2.5 3Z" fill="white" />
-                                        </svg>
-                                    </div>
-                                    <div class="flex flex-col gap-[50px] pl-4 py-5">
-                                        <p class="text-white text-lg font-medium">What’s GALK</p>
-                                        <p class="text-white text-lg font-medium">How to get Internship</p>
-                                        <p class="text-white text-lg font-medium">Flow to recruitment</p>
-                                        <p class="text-white text-lg font-medium">Comment from intern</p>
-                                        <p class="text-white text-lg font-medium">FAQ</p>
-                                        <img src="/icons/insta.png" alt="" class="w-10 h-10" />
-                                    </div>
-                                </div>
-
-
-
-                            </div>
-                        )}
-                    </div>
-
                     <div class="flex flex-col items-center justify-center -mt-[66px] md:-mt-14 gap-[9px] absolute top-full left-1/2 text-center -translate-x-1/2 w-full">
-                        <div class="text-primary md:text-[42px] text-[22px] font-black bg-secondary px-5 md:block hidden">
-                            IIT students <span class="text-white md:text-4xl text-[18px]">who want to</span> intern <span class="text-white md:text-4xl text-[18px]">at a</span> Japanese company,
+                        <div class="text-primary md:text-[42px] text-[22px] font-extrabold bg-secondary  px-5 md:block hidden">
+                            IIT students <span class="text-white md:text-[36px] text-[18px]">who want to</span> intern <span class="text-white md:text-[36px] text-[18px]">at a</span> Japanese company,
                         </div>
-                        <div class="text-primary md:text-[42px] text-[22px] font-black bg-secondary md:px-5 px-3 block md:hidden">
-                            IIT students <span class="text-white md:text-4xl text-[18px]">who want to</span> intern
+                        <div class="text-primary md:text-[42px] text-[22px] font-extrabold bg-secondary  md:px-5 px-3 block md:hidden">
+                            IIT students <span class="text-white md:text-[36px] text-[18px]">who want to</span> intern
                         </div>
-                        <div class="text-primary md:text-[42px] text-[22px] font-black bg-secondary md:px-5 px-3 block md:hidden">
-                            <span class="text-white md:text-4xl text-[18px]">at a</span> Japanese company,
+                        <div class="text-primary md:text-[42px] text-[22px] font-extrabold bg-secondary  md:px-5 px-3 block md:hidden">
+                            <span class="text-white md:text-[36px] text-[18px]">at a</span> Japanese company,
                         </div>
-                        <div class="text-white md:text-4xl text-[22px] px-3 font-black md:px-5 md:py-1 bg-secondary ">
+                        <div class="text-white md:text-[42px] text-[22px] leading-[100%] px-3 py-[3px] font-extrabold md:px-5 md:py-1 bg-secondary ">
                             Gather round!
                         </div>
                     </div>
                 </nav>
-
-
-            </div>
-            <div class="flex items-center justify-center ">
-                <div class="flex pt-[80px]  bg-white justify-center text-center items-center flex-col gap-4 max-w-[990px] px-5">
-                    <h1 class="text-[32px] font-bold text-black_light">
-                        What’s GALK?
-                    </h1>
-                    <hr class="w-[60px]  border-1 border-white_light  " />
-                    <div>
-                        <p class="md:text-xl  text-sm font-normal text-black_light  text-center pt-6">
-                            We offer a two-month summer internship program at a Japanese company <br />
-                            for job-seeking students of the Indian Institute of Technology.
-                        </p>
-                        <p class="md:text-xl text-sm  font-normal text-black_light max-w-[900px] w-full text-center ">
-                            There is no <span class="font-bold text-[15px] md:text-xl"> need to speak Japanese </span>and Travel, accommodation, and living expenses will be covered. <br />
-                            (Only visa application fees and travel insurance are to be paid by the student.) <br />
-                            so all you need is <span class="font-bold text-[15px] md:text-xl">  a desire to work in Japan! </span>
-                        </p>
+            </header>
+            {isContentOpen && (
+                <div className="bg-black/[0.65] z-50 min-h-[calc(100vh_+_10px)] h-screen max-h-screen overflow-y-auto fixed w-full flex justify-end  top-0 right-0">
+                    <div class="w-[90%] bg-black-500 space-y-[40px]">
+                        <div class="flex justify-end pt-[25px] px-4 hover:cursor-pointer text-white">
+                            <Cross1Icon onClick={toggleContent} className="w-7 h-7" />
+                        </div>
+                        <div class="flex gap-1 px-12">
+                            <div>
+                                <img src="/sidebar.svg" alt="" className="h-[730px]" />
+                            </div>
+                            <div class="flex flex-col pl-8">
+                                <p class="text-white text-[20px] py-[24px] font-medium">What’s GALK</p>
+                                <p class="text-white text-[20px] py-[24px] font-medium">How to get Internship</p>
+                                <p class="text-white text-[20px] py-[24px] font-medium">Flow to recruitment</p>
+                                <p class="text-white text-[20px] py-[24px] font-medium">Comment from intern</p>
+                                <p class="text-white text-[20px] py-[24px] font-medium">FAQ</p>
+                                <img src="/icons/insta.png" alt="" class="w-10 h-10 mt-[24px]" />
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="flex md:flex-row flex-col md:gap-3  gap-2 pt-6 ">
-                        <img src="/images/db1.png" alt="" class="xl:w-[324px] md:w-[250px] w-[343px] h-[174px]  md:h-[164px] " />
-                        <img src="/images/db2.png" alt="" class="xl:w-[324px] md:w-[250px] w-[343px] h-[174px]  md:h-[164px] " />
-                        <img src="/images/db3.png" alt="" class="xl:w-[324px] md:w-[250px] w-[343px] h-[174px]  md:h-[164px] " />
-                    </div>
-
-
                 </div>
+            )}
+        </>
+    )
+}
+
+export default function Dashboard() {
+
+    return (
+        <div>
+            <div class="bg-primary-image-mobile md:bg-primary-image h-[400px] md:h-[700px]">
+                <Header />
             </div>
-            <div class="bg-gray-100 flex flex-col justify-center items-center relative mt-[70px] md:mt-[166px] pt-8 pb-[84px] ">
-                <h1 class="xl:text-[76px] text-[26px] font-bold text-gray-100 absolute  -top-[29px] md:-top-[84px] w-full text-center z-[1]">
+            <section class="flex w-full items-center justify-center mt-9 md:mt-20">
+                <div class="flex bg-white justify-center text-center items-center flex-col gap-6 md:gap-4 w-full max-w-[1050px] px-4 md:px-5 lg:px-2">
+                    <div>
+                        <h1 class="text-[24px] md:text-[32px] leading-none font-bold text-black_light">
+                            What’s GALK?
+                        </h1>
+                        <hr class="w-[60px] border-2 border-white_light mt-3 mx-auto" />
+                    </div>
+                    <div>
+                        <p class="md:text-[20px]  text-[15px] font-normal text-black_light max-w-[900px] w-full text-center leading-[24px] md:leading-[32px] pt-[1px] py-0">
+                            <span>
+                                We offer a two-month summer internship program at a Japanese company <br className="hidden md:block" />
+                                for job-seeking students of the Indian Institute of Technology.
+                            </span>
+                            <br />
+                            There is no <span class="font-bold text-[15px] md:text-[20px] "> need to speak Japanese </span>and Travel, accommodation, and living expenses will be covered. <br />
+                            (Only visa application fees and travel insurance are to be paid by the student.) <br />
+                            so all you need is <span class="font-bold text-[15px] md:text-[20px] ">  a desire to work in Japan! </span>
+                        </p>
+                    </div>
+
+                    <div class="w-full grid grid-cols-1 md:grid-cols-3 md:gap-3 gap-2 -mt-1  md:mt-6">
+                        <img src="/images/db1.png" alt="" class="xl:w-full md:w-[250px] w-full h-[172px]  md:h-[164px] " />
+                        <img src="/images/db2.png" alt="" class="xl:w-full md:w-[250px] w-full h-[172px]  md:h-[164px] " />
+                        <img src="/images/db3.png" alt="" class="xl:w-full md:w-[250px] w-full h-[172px]  md:h-[164px] " />
+                    </div>
+                </div>
+            </section>
+            <section class="w-full flex flex-col justify-center items-center overflow-x-hidden mt-[40px] md:mt-[101px]">
+                <h1 class="max-w-[1050px] xl:text-[80px] text-[26px] text-center leading-none font-bold text-gray-100 w-full z-[3] px-2 md:px-0">
                     GALK SUMMER INTERNSHIP
                 </h1>
-                <div class="flex gap-1 items-center  max-w-[990px] px-5  w-full">
-                    <h1 class="md:text-[32px] text-xl  font-bold text-black_light">
-                        How to get Internship?
-                    </h1>
-                    <img src="/images/plane.svg" alt="" class="lg:w-[200px] lg:h-auto w-[105px] -mt-10 md:-mt-0" />
+                <div className=" w-full md:px-2 pt-10 md:pt-20 bg-gray-100 pb-[40px] md:pb-[74px] -mt-1.5 xl:-mt-3">
+                    <div className="max-w-[1050px] mx-auto">
+                        <div class="flex gap-1 items-center px-4 md:px-5 py-0 w-fit relative">
+                            <h1 class="text-[24px] md:text-[32px] md:leading-[100%] font-bold text-black_light">
+                                How to get Internship?
+                            </h1>
+                            <img src="/images/plane.svg" alt="" class="lg:w-[200px] lg:h-auto w-[105px] absolute -right-[80px] -top-6 lg:-right-[187px] lg:-top-9" />
+                        </div>
+                        <div class="flex justify-start mt-5 md:mt-10 pl-16 w-full relative">
+                            <Stepper2 />
+                            <img src="/images/screen.png" alt="" class="w-[220px] h-auto absolute left-[18%] top-[62%] md:top-[53%] lg:top-[50%] md:left-[9.5%] lg:left-[7.5%]" />
+                        </div>
+                        <div class="md:pl-[72px] lg:pl-[80px] pl-[70px] mt-24 md:mt-14 xl:mt-10 w-full">
+                            <img src="/images/screen2.png" alt="" class="w-[220px] h-auto" />
+                        </div>
+                    </div>
                 </div>
-
-                <div class="flex justify-start pt-12 pl-16 max-w-[990px] w-full relative">
-                    <Stepper2 />
-                    <img src="/images/screen.png" alt="" class="w-[207px] h-[175px] absolute left-[20%] top-[57%] md:top-[53%] lg:top-[54%] md:left-[9%]" />
-                </div>
-                <div class="max-w-[990px] md:pl-[88px] pl-20 pt-14 md:pt-2 lg:pt-6 w-full">
-                    <img src="/images/screen.png" alt="" class="w-[207px] h-[175px]" />
-                </div>
-            </div>
-            <div class="flex items-center justify-center py-10 md:py-[80px] bg-black_light relative">
-                <div class="max-w-[990px]  w-full ">
-                    <img src="/images/recruitmentprocess.svg" alt="" class="lg:w-[301px] lg:h-[247px] w-[109px] h-[102px]  absolute md:right-[3%] xl:right-[10%] right-4 -top-14  lg:top-9" />
-                    <div class="text-white w-full pb-6 md:pb-12">
-                        <h1 class="text-white lg:text-[32px] text-2xl font-bold px-5">
+            </section>
+            <section class="flex items-center justify-center py-10 md:py-[80px] bg-black_light">
+                <div class="max-w-[1050px] w-full">
+                    <div class="text-white w-full md:w-fit relative">
+                        <h1 class="text-white lg:text-[32px] text-[24px] font-bold px-5">
                             Flow from the start of internship to recruitment
                         </h1>
+                        <img src="/images/recruitmentprocess.svg" alt="" class="lg:w-[301px] lg:h-[247px] w-[109px] h-[102px]  absolute md:left-full right-4 -top-[100px] md:-top-36 lg:-top-14" />
                     </div>
-                    <div class="flex justify-left pb-12 pl-16 md:pl-[78px]">
+                    <div class="flex justify-left pl-16 md:pl-[78px] mt-[24px] md:mt-[40px]">
                         <Stepper />
                     </div>
-                    <div class="flex md:flex-row flex-col items-center justify-center gap-3  md:mt-[60px] px-5 ">
-                        <img src="/images/job1.png" alt="" class="xl:w-[324px] md:w-[250px] w-[343px] h-[174px]  md:h-[164px] object-cover aspect-square object-center" />
-                        <img src="/images/job2.png" alt="" class="xl:w-[324px] md:w-[250px] w-[343px] h-[174px]  md:h-[164px] object-cover aspect-square object-center" />
-                        <img src="/images/job3.png" alt="" class="xl:w-[324px] md:w-[250px] w-[343px] h-[174px]  md:h-[164px] object-cover aspect-square object-center" />
+                    <div class="flex md:flex-row flex-col items-center justify-center gap-3 mt-9  md:mt-[60px] px-4 md:px-5 ">
+                        <img src="/images/job1.png" alt="" class="xl:w-[324px] md:w-[250px] w-[343px] h-[164px]  md:h-[164px] object-cover aspect-square object-center" />
+                        <img src="/images/job2.png" alt="" class="xl:w-[324px] md:w-[250px] w-[343px] h-[164px]  md:h-[164px] object-cover aspect-square object-center" />
+                        <img src="/images/job3.png" alt="" class="xl:w-[324px] md:w-[250px] w-[343px] h-[164px]  md:h-[164px] object-cover aspect-square object-center" />
                     </div>
                 </div>
-            </div>
-            <div class="flex items-center justify-center w-full">
-                <div class="bg-white pt-[68px]  w-full max-w-[990px] px-5   pb-[80px]">
+            </section>
+            <section class="flex items-center justify-center w-full mt-10 md:mt-[78px]">
+                <div class="bg-white w-full max-w-[1050px] px-4 md:pl-7 md:pr-4 pb-[40px] md:pb-[80px]">
                     <div class="flex md:gap-7 gap-4">
-                        <p class="md:text-[32px] text-2xl font-bold text-black_light">
+                        <p class="md:text-[32px] text-[24px]  font-bold text-black_light">
                             Comment from intern
                         </p>
                         <img src="/images/engineringteam.svg" class="md:h-[61px] md:w-[120px] w-[95px] h-[48px] -mt-3" />
                     </div>
-                    <div class="pt-6 md:pt-10 flex flex-col gap-6">
+                    <div class="pt-5 md:pt-3 flex flex-col gap-6">
                         {
                             students.map((student) => (
                                 <StudentListItem student={student} />
                             ))
                         }
-
                     </div>
-
                 </div>
-            </div>
-            <div class="flex items-center justify-center w-full bg-black_light  relative">
+            </section>
+            <div class="lg:overflow-hidden xl:h-[740px] md:mt-[10px] flex items-center justify-center w-full bg-black_light relative">
                 <h1 className="text-[162px] font-bold text-gray-500 opacity-60 absolute -right-[300px] rotate-90 xl:block hidden">
                     Instagram
                 </h1>
                 <h1 className="text-[162px] font-bold text-gray-500 opacity-60 absolute -left-[300px] -rotate-90 xl:block hidden">
                     Instagram
                 </h1>
-                <div class="w-full max-w-[990px] px-5 pb-10 md:pb-[72px] relative">
-
-                    <div class="flex md:gap-4 items-center justify-center pb-6 pt-10 md:pt-[88px] md:pb-10 w-full">
-                        <p class="text-2xl  md:text-[32px] font-bold text-white text-center md:text-start w-full">
+                <div class="w-full max-w-[1050px] px-5 pt-[40px] md:pt-[55px] pb-[40px] md:pb-[72px] relative">
+                    <div class="flex md:gap-4 items-center justify-center w-full md:ml-10">
+                        <p class="text-[24px]  md:text-[32px] font-semibold text-white text-center md:text-start w-fit md:mt-2">
                             Please follow our Instagram!
                         </p>
-                        <img src="/images/mobile.svg" alt="" width={94} height={74} class="h-[74px]  w-[94px] md:block hidden" />
-                        <img src="/images/mobile.svg" alt="" width={70} height={60} class="h-[60px]  w-[76px] absolute -top-7 right-13 md:hidden block" />
+                        <img src="/images/mobile.svg" alt="" width={94} height={74} class="w-[100px] h-auto md:block hidden" />
+                        <img src="/images/mobile.svg" alt="" width={70} height={60} class="h-[60px] w-[76px] absolute -top-7 right-2 md:hidden block" />
                     </div>
-                    <div>
-
-                    </div>
-                    <div class="grid md:grid-cols-4 grid-cols-3 relative">
+                    <div class="grid md:grid-cols-4 grid-cols-3 relative mt-[18px]">
                         <img src="/images/insta1.png" alt="" class="w-full h-[115px] md:h-[252px] md:w-[250px]" />
                         <img src="/images/insta2.png" alt="" class="w-full h-[115px] md:h-[252px] md:w-[250px]" />
                         <img src="/images/insta3.png" alt="" class="w-full h-[115px] md:h-[252px] md:w-[250px]" />
@@ -213,10 +214,9 @@ export default function Dashboard() {
                                 <p class="text-base text-black-500 pb-2">
                                     @galk_willings
                                 </p>
-                                <button class="flex pr-3 py-2 pl-8 md:gap-10 gap-6  items-center md:py-[14px] md:pl-20 md:pr-6 text-[10px] md:text-lg font-medium  text-white rounded-full border primary-btn">
+                                <button class="h-[30px] lg:h-[57px] px-5 gap-6 flex items-center justify-center md:py-[14px] text-[10px] md:text-[18px]  relative font-normal  text-white rounded-full border primary-btn w-full">
                                     Follow Us!!
-
-                                    <ChevronRightIcon />
+                                    <ChevronRightIcon className="w-4 h-4 absolute right-3 lg:right-6" />
                                 </button>
                             </div>
 
@@ -229,21 +229,20 @@ export default function Dashboard() {
                 </div>
             </div>
             <div class="flex items-center justify-center w-full bg-white py-10 md:py-[80px]">
-                <div class="w-full max-w-[990px] px-5  ">
+                <div class="w-full max-w-[1050px] px-5 md:px-6">
                     <div class="flex gap-2">
-                        <p class="md:text-[32px] text-2xl  font-bold text-black_light pb-[29px]">
+                        <p class="md:text-[32px] text-[24px]   font-bold text-black_light pb-[29px]">
                             FAQ
                         </p>
                         <img src="/images/faq.png" alt="" class="w-[49px] h-[37px] -mt-[10px] block md:hidden" />
                     </div>
-
-
-                    {
-                        Queries.map((Query) => (
-                            <QuestionsListItem Query={Query} />
-                        ))
-                    }
-
+                    <div className="space-y-5">
+                        {
+                            Queries.map((Query) => (
+                                <QuestionsListItem Query={Query} />
+                            ))
+                        }
+                    </div>
 
                 </div>
             </div>
@@ -270,9 +269,19 @@ export default function Dashboard() {
 
 
 const students = [
-    { name: "Aishwarya Chodavarapu ", college: "IIT GOA / Computer Science and Engineering", image: "/images/ash.png", content:<>Firstly, I really liked the company, and the staff is very welcoming and takes excellent care of us. They frequently organise group lunches and ensure our comfort in the new environment.<br/>Secondly, I am highly satisfied with the project assigned to us. Through the valuable guidance of the staff, I have had the opportunity to expand my knowledge in the technical field. Working in this company has been an outstanding experience that will prove valuable in the future.<br/> Thirdly, it has always been my dream to work in Japan, and thanks to Willings support, that dream came true. The staff at Willings has been instrumental in assisting us with settling into Japan and resolving any issues we encountered. I am very grateful to Willings for their exceptional care and unwavering support in overcoming personal challenges.Lastly, I want to add that the Japanese people are renowned for their genuine care and exceptional discipline. Immersing myself in the Japanese work culture has not only shaped me as an individual but has also instilled in me a heightened sense of discipline and personal growth. The diligent work ethic and admirable values I've witnessed in Japan have inspired me to strive for excellence and become a better version of myself.</> },
-    { name: "Harsh Agrawal ", college: "IIT GOA / Computer Science and Engineering", image: "/images/harash.png", content: "During my internship in Japan, I had an amazing experience, and I found the overall work environment to be enjoyable and fulfilling. The cultural immersion and exposure to a new environment were truly enriching. Japan's unique customs, traditions, and work culture offered a fresh perspective and created an excellent learning environment. The projects here a very intriguing and gives you a different exposure when compared to other places. The way team works and different aspects of corporate world is very smoothly operated here which is a treat to learn as a fresher. The mentors are very helpful and always interested in your ideas and approaches. There is freedom to choose your own path to solve the problem, which helps you grow more. Lastly, I want to express my gratitude for the exceptional support provided by Willings. From the moment I joined the program, they were providing constant support and help whenever required. The biweekly meetings and the feedback system is very helpful and that shows how concerned they are regarding our well being. All the amenities are well provided and are of top quality.Willings consistently went above and beyond to ensure a positive experience for all interns." },
-    { name: "Aishwarya Chodavarapu ", college: "IIT Guwahait / Mechanical Engineering", image: "/images/valb.png", content:<> Before coming to japan I already had a great interest in Japanese culture because of my interest in anime and manga and Japanese cars. I did my internship in Kumamoto which is somewhere at outskirts of Japan but still it is a great town. I saw my dream cars every day. Which motivates me to work more hard to get them. And people of japan are very kind and helpful. I don’t even speak Japanese but still if i try to ask for help from any stranger he do his best to help me always. And people of my company are very sweet and kind. Always there to help me. Even the people who don’t speak English try there best to learn English to speak to me. So that I don’t feel left out in Japan.<br/> Willings support is best. Willings is always there to help you in any kind of way possible. You just tell Willings what you need and they will provide that very fast. Also everyone I met from Willings is so kind and helpful and treats you like a friend. You can share anything with willings </>},
+    { name: "Aishwarya Chodavarapu ", college: "IIT GOA / Computer Science and Engineering", image: "/images/ash.png", content: <>Firstly, I really liked the company, and the staff is very welcoming and takes excellent care of us. They frequently organise group lunches and ensure our comfort in the new environment.<br />Secondly, I am highly satisfied with the project assigned to us. Through the valuable guidance of the staff, I have had the opportunity to expand my knowledge in the technical field. Working in this company has been an outstanding experience that will prove valuable in the future.<br /> Thirdly, it has always been my dream to work in Japan, and thanks to Willings support, that dream came true. The staff at Willings has been instrumental in assisting us with settling into Japan and resolving any issues we encountered. I am very grateful to Willings for their exceptional care and unwavering support in overcoming personal challenges. <br /> Lastly, I want to add that the Japanese people are renowned for their genuine care and exceptional discipline. Immersing myself in the Japanese work culture has not only shaped me as an individual but has also instilled in me a heightened sense of discipline and personal growth. The diligent work ethic and admirable values I've witnessed in Japan have inspired me to strive for excellence and become a better version of myself.</> },
+    {
+        name: "Harsh Agrawal ",
+        college: "IIT Guwahait / Mechanical Engineering",
+        image: "/images/harash.png",
+        content: <span className="text-[14px] md:text-[16px]">During my internship in Japan, I had an amazing experience, and I found the overall work environment to be enjoyable and fulfilling. The cultural immersion and exposure to a new environment were truly enriching. Japan's unique customs, traditions, and work culture offered a fresh perspective and created an excellent learning environment. The projects here a very intriguing and gives you a different exposure when compared to other places. The way team works and different aspects of corporate world is very smoothly operated here which is a treat to learn as a fresher. The mentors are very helpful and always interested in your ideas and approaches. There is freedom to choose your own path to solve the problem, which helps you grow more. Lastly, I want to express my gratitude for the exceptional support provided by Willings. From the moment I joined the program, they were providing constant support and help whenever required. The biweekly meetings and the feedback system is very helpful and that shows how concerned they are regarding our well being. All the amenities are well provided and are of top quality.Willings consistently went above and beyond to ensure a positive experience for all interns.</span>
+    },
+    {
+        name: "Vaibhav ",
+        college: "IIT Ropar / Computer science",
+        image: "/images/valb.png",
+        content: <span className="text-[14px] md:text-[16px]"> Before coming to japan I already had a great interest in Japanese culture because of my interest in anime and manga and Japanese cars. I did my internship in Kumamoto which is somewhere at outskirts of Japan but still it is a great town. I saw my dream cars every day. Which motivates me to work more hard to get them. And people of japan are very kind and helpful. I don’t even speak Japanese but still if i try to ask for help from any stranger he do his best to help me always. And people of my company are very sweet and kind. Always there to help me. Even the people who don’t speak English try there best to learn English to speak to me. So that I don’t feel left out in Japan.<br /> Willings support is best. Willings is always there to help you in any kind of way possible. You just tell Willings what you need and they will provide that very fast. Also everyone I met from Willings is so kind and helpful and treats you like a friend. You can share anything with willings </span>
+    },
 
 ]
 
@@ -286,17 +295,16 @@ const students = [
 function StudentListItem({ student }) {
     return (
         <div class="flex flex-col md:flex-row md:gap-4 w-full justify-center items-center md:items-start md:justify-normal">
-            <img src={student.image} alt="" width={110} height={110} class="h-[110px] w-[110px] object-cover object-center aspect-square rounded" />
-            <div class="w-full  flex flex-col items-center md:items-start">
-                <p class="text-base md:text-lg font-bold text-black_light">
+            <img src={student.image} alt="" width={110} height={110} class="h-auto w-[110px] mt-2 object-cover object-center aspect-square rounded" />
+            <div class="w-full  flex flex-col items-center md:items-start ">
+                <p class="text-base md:text-[18px]  font-bold text-black_light">
                     {student.name}
                 </p>
-                <p class="text-sm md:text-base font-bold text-center text-gray-200  md:pt-[6px]">
+                <p class="text-[14px]  md:text-base font-bold text-center text-gray-200  md:mt-0">
                     {student.college}
                 </p>
-                <p class="text-sm font-normal text-black_light pt-[12px] ">
+                <p class="text-[14px]  font-normal leading-[22px] text-black_light pt-[12px] w-full max-w-[880px]">
                     {student.content}
-
                 </p>
             </div>
         </div>
@@ -307,8 +315,9 @@ function StudentListItem({ student }) {
 
 const Queries = [
     { query: "Q", question: "If I become an intern, how do I pay for my expenses to go to Japan?", answer: "All travel, accommodation, and living expenses will be covered. Only visa application fees and travel insurance are to be paid by the interns themselves." },
-    { query: "Q", question: "Does the GALK summer internship mean working for a Japanese company called GALK?", answer: "No, it doesn’t. GALK is one of willings Inc’s services. GALK Summer Internship is a program in which we introduce IIT students to various Japanese companies for internships" },
-    { query: "Q", question: "How many interviews are there?", answer: "There are two total. The first one is a HR interview with us ( = Willings Inc. ) The second one is a technical interview with the company you may be going to for your internship." },
+    { query: "Q", question: "Does the GALK summer internship mean working for a Japanese company called GALK?", answer: <span>No, it doesn’t. GALK is one of willings Inc’s services.<br /> GALK Summer Internship is a program in which we introduce IIT students to various Japanese companies for internships</span> },
+    { query: "Q", question: "How many interviews are there?", answer: <span>There are two total.<br /> The first one is a HR interview with us ( = Willings Inc. )<br /> The second one is a technical interview with the company you may be going to for your internship.</span> },
+    { query: "Q", question: "What kinds of positions are available for interns?", answer: "There are a variety of positions available depending on the company." },
 
 ]
 
@@ -321,16 +330,16 @@ const Queries = [
 function QuestionsListItem({ Query }) {
     return (
         <div class=" w-full">
-            <div class="flex gap-[10px] bg-gray-100 p-3">
-                <p class="text-xl font-bold text-black_light">
+            <div class="flex items-start gap-[10px] bg-gray-100 p-3">
+                <p class="text-[20px]  font-bold text-black_light">
                     {Query.query}
                 </p>
-                <p class="text-base font-medium text-black_light">
+                <p class="text-base font-medium text-black_light mt-1">
                     {Query.question}
                 </p>
 
             </div>
-            <div class="pt-4 pb-6  md:pl-9">
+            <div class="pt-4   md:pl-9 max-w-[940px]">
                 <p class="text-[15px] font-normal ">
                     {Query.answer}
                 </p>
