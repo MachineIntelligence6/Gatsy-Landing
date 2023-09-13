@@ -10,19 +10,19 @@ export default function Footer() {
                     <img src="/images/logoicon.svg" width={156} height={52} className="h-full w-auto aspect-square object-cover object-center" />
                 </a>
                 <div className="flex lg:justify-between gap-[16px] md:gap-[36px]  flex-wrap justify-center">
-                    <a className="text-black_light text-[16px] md:text-[18px] font-medium">
+                    <a  className="text-black_light text-[16px] md:text-[18px] font-medium cursor-pointer">
                         What’s GALK
                     </a>
-                    <a className="text-black_light text-[16px] md:text-[18px] font-medium">
+                    <a className="text-black_light text-[16px] md:text-[18px] font-medium cursor-pointer">
                         How to get Internship
                     </a>
-                    <a className="text-black_light text-[16px] md:text-[18px] font-medium">
+                    <a className="text-black_light text-[16px] md:text-[18px] font-medium cursor-pointer">
                         Flow to recruitment
                     </a>
-                    <a className="text-black_light text-[16px] md:text-[18px] font-medium">
+                    <a className="text-black_light text-[16px] md:text-[18px] font-medium cursor-pointer">
                         Comment from intern
                     </a>
-                    <a className="text-black_light text-[16px] md:text-[18px] font-medium">
+                    <a className="text-black_light text-[16px] md:text-[18px] font-medium cursor-pointer">
                         FAQ
                     </a>
                 </div>

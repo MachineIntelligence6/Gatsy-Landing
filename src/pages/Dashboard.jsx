@@ -1,8 +1,7 @@
 import Footer from "../components/Footer";
 import React, { useState } from "react";
-// import { ChevronRightIcon } from "@/radix-ui/react-icons";
 import Stepper, { Stepper2 } from "../components/Stepper";
-import { ChevronRightIcon, Cross1Icon, HamburgerMenuIcon, TextAlignJustifyIcon } from "@radix-ui/react-icons";
+import { ChevronRightIcon, Cross1Icon } from "@radix-ui/react-icons";
 
 
 
