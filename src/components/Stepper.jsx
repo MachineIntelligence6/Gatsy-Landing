@@ -8,11 +8,11 @@ export default function Stepper() {
                 <Step
                     heading="Step.1"
                     content="Participate in a 2-month Summer internship at a Japanese company" />
-                <div class="flex-auto border-l-2  transition duration-500 ease-in-out border-gray-300 h-[60px] md:h-[75px]"></div>
+                <div class="flex-auto border-l-2  transition duration-500 ease-in-out border-gray-300 h-[50px] md:h-[75px]"></div>
                 <Step
                     heading="Step.2"
                     content="After completion of the internship, you will have a chance to get the PPO from intern company." />
-                <div class="flex-auto border-l-2 transition h-[80px] md:h-[75px] duration-500 ease-in-out border-gray-300"></div>
+                <div class="flex-auto border-l-2 transition h-[70px] md:h-[75px] duration-500 ease-in-out border-gray-300"></div>
                 <Step
                     heading="Step.3"
                     content="Join the company in October of the following year" />
@@ -84,11 +84,11 @@ export function Stepper2() {
             <Step2
                 heading="Step.1"
                 content="You will get  notification from the Placement Cell  to inform you that they are accepting applications for the GALK summer internship." />
-            <div class="flex-auto h-[80px] md:h-[88px] border-l-2 transition duration-500 ease-in-out border-black_light"></div>
+            <div class="flex-auto h-[82px] md:h-[78px] border-l-2 transition duration-500 ease-in-out border-black_light"></div>
             <Step2
                 heading="Step.2"
                 content="Please register on the GALK portal in the notification. ( registration on the GALK Portal = application ) " />
-            <div class="flex-auto h-[78px] md:h-[62px] border-l-2 transition duration-500 ease-in-out border-black_light"></div>
+            <div class="flex-auto h-[70px] md:h-[60px] border-l-2 transition duration-500 ease-in-out border-black_light"></div>
             <Step2
                 heading="Step.3"
                 content={

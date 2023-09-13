@@ -72,8 +72,8 @@ function Header() {
                             <Cross1Icon onClick={toggleContent} className="w-7 h-7" />
                         </div>
                         <div className="flex gap-1 px-12">
-                            <div>
-                                <img src="/sidebar.svg" alt="" className="h-[730px]" />
+                            <div className="flex-shrink-0">
+                                <img src="/sidebar.svg" alt="" className="min-h-[730px] h-auto" />
                             </div>
                             <div className="flex flex-col pl-8">
                                 <p className="text-white text-[20px] py-[24px] font-medium">What’s GALK</p>
@@ -84,6 +84,8 @@ function Header() {
                                 <img src="/icons/insta.png" alt="" className="w-10 h-10 mt-[24px]" />
                             </div>
                         </div>
+
+
                     </div>
                 </div>
             )}
@@ -140,9 +142,9 @@ export default function Dashboard() {
                         </div>
                         <div className="flex justify-start mt-5 md:mt-10 pl-16 w-full relative">
                             <Stepper2 />
-                            <img src="/images/screen.svg" alt="" className="w-[220px] h-auto absolute left-[18%] top-[62%] md:top-[53%] lg:top-[50%] md:left-[9.5%] lg:left-[7.5%]" />
+                            <img src="/images/screen.svg" alt="" className="w-[220px] h-auto absolute left-[17%] top-[60%] md:top-[50%] lg:top-[50%] md:left-[9.5%] lg:left-[7.5%] xl:top-[51%]" />
                         </div>
-                        <div className="md:pl-[72px] lg:pl-[80px] pl-[70px] mt-24 md:mt-14 xl:mt-10 w-full">
+                        <div className="md:pl-[72px] lg:pl-[80px] pl-[66px] mt-24 md:mt-14 xl:mt-9 w-full">
                             <img src="/images/screen2.svg" alt="" className="w-[220px] h-auto" />
                         </div>
                     </div>
@@ -159,7 +161,7 @@ export default function Dashboard() {
                     <div className="flex justify-left pl-16 md:pl-[78px] mt-[24px] md:mt-[40px]">
                         <Stepper />
                     </div>
-                    <div className="flex md:flex-row flex-col md:items-center justify-center gap-3 mt-9  md:mt-[60px] px-5 ">
+                    <div className="flex md:flex-row flex-col md:items-center justify-center gap-3 mt-[40px]  md:mt-[60px] px-5 ">
                         <img src="/images/job1.png" alt="" className="xl:w-[324px] md:w-[250px] w-[324px] h-[164px]  md:h-[164px] object-cover aspect-square object-center" />
                         <img src="/images/job2.png" alt="" className="xl:w-[324px] md:w-[250px] w-[324px] h-[164px]  md:h-[164px] object-cover aspect-square object-center" />
                         <img src="/images/job3.png" alt="" className="xl:w-[324px] md:w-[250px] w-[324px] h-[164px]  md:h-[164px] object-cover aspect-square object-center" />
@@ -168,11 +170,11 @@ export default function Dashboard() {
             </section>
             <section className="flex items-center justify-center w-full mt-10 md:mt-[78px]">
                 <div className="bg-white w-full max-w-[1050px] px-4 md:pl-7 md:pr-4 pb-[40px] md:pb-[80px]">
-                    <div className="flex md:gap-7 gap-4">
+                    <div className="flex md:gap-7 gap-[14px]">
                         <p className="md:text-[32px] text-[24px]  font-bold text-black_light">
                             Comment from intern
                         </p>
-                        <img src="/images/engineringteam.svg" className="md:h-[61px] md:w-[120px] w-[95px] h-[48px] -mt-3 ml-[2px] md:ml-0" />
+                        <img src="/images/engineringteam.svg" className="md:h-[61px] md:w-[120px] w-[95px] h-[48px] -mt-2 md:-mt-3 ml-[2px] md:ml-0" />
                     </div>
                     <div className="pt-5 md:pt-3 flex flex-col gap-6">
                         {
@@ -235,7 +237,7 @@ export default function Dashboard() {
                         <p className="md:text-[32px] text-[24px]   font-bold text-black_light pb-[29px]">
                             FAQ
                         </p>
-                        <img src="/images/faq.png" alt="" className="w-[49px] h-[37px] -mt-[10px] block md:hidden" />
+                        <img src="/images/faq.svg" alt="" className="w-[49px] h-[37px] -mt-[10px] block md:hidden" />
                     </div>
                     <div className="space-y-[20px]">
                         {
@@ -270,7 +272,7 @@ export default function Dashboard() {
 
 
 const students = [
-    { name: "Aishwarya Chodavarapu ", college: "IIT GOA / Computer Science and Engineering", image: "/images/ash.png", image1: "/images/ashm.png", content: <>Firstly, I really liked the company, and the staff is very welcoming and takes excellent care of us. They frequently organise group lunches and ensure our comfort in the new environment.<br />Secondly, I am highly satisfied with the project assigned to us. Through the valuable guidance of the staff, I have had the opportunity to expand my knowledge in the technical field. Working in this company has been an outstanding experience that will prove valuable in the future.<br /> Thirdly, it has always been my dream to work in Japan, and thanks to Willings support, that dream came true. The staff at Willings has been instrumental in assisting us with settling into Japan and resolving any issues we encountered. I am very grateful to Willings for their exceptional care and unwavering support in overcoming personal challenges. <br /> Lastly, I want to add that the Japanese people are renowned for their genuine care and exceptional discipline. Immersing myself in the Japanese work culture has not only shaped me as an individual but has also instilled in me a heightened sense of discipline and personal growth. The diligent work ethic and admirable values I've witnessed in Japan have inspired me to strive for excellence and become a better version of myself.</> },
+    { name: "Aishwarya Chodavarapu ", college: "IIT GOA / Computer Science and Engineering", image: "/images/ash.svg", image1: "/images/ashm.png", content: <>Firstly, I really liked the company, and the staff is very welcoming and takes excellent care of us. They frequently organise group lunches and ensure our comfort in the new environment.<br />Secondly, I am highly satisfied with the project assigned to us. Through the valuable guidance of the staff, I have had the opportunity to expand my knowledge in the technical field. Working in this company has been an outstanding experience that will prove valuable in the future.<br /> Thirdly, it has always been my dream to work in Japan, and thanks to Willings support, that dream came true. The staff at Willings has been instrumental in assisting us with settling into Japan and resolving any issues we encountered. I am very grateful to Willings for their exceptional care and unwavering support in overcoming personal challenges. <br /> Lastly, I want to add that the Japanese people are renowned for their genuine care and exceptional discipline. Immersing myself in the Japanese work culture has not only shaped me as an individual but has also instilled in me a heightened sense of discipline and personal growth. The diligent work ethic and admirable values I've witnessed in Japan have inspired me to strive for excellence and become a better version of myself.</> },
     {
         name: "Harsh Agrawal ",
         college: "IIT Guwahait / Mechanical Engineering",
@@ -292,6 +294,7 @@ const students = [
 //     name:String,
 //     college:String,
 //     content:React.ReactNode,
+// 
 // }
 
 
