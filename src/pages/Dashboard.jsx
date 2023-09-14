@@ -38,7 +38,7 @@ function Header() {
                             </a>
                         </div>
                         <a href="#" className="xl:block hidden">
-                            <img src="/icons/insta.png" alt="" />
+                            <img src="/images/Instagram_logo.svg" alt="" />
                         </a>
                         <div className="xl:hidden">
                             {/* <HamburgerMenuIcon
@@ -80,7 +80,7 @@ function Header() {
                                 <p className="text-white text-[20px] py-[24px] font-medium">Flow to recruitment</p>
                                 <p className="text-white text-[20px] py-[24px] font-medium">Comment from intern</p>
                                 <p className="text-white text-[20px] py-[24px] font-medium">FAQ</p>
-                                <img src="/icons/insta.png" alt="" className="w-10 h-10 mt-[24px]" />
+                                <img src="/images/Instagram_logo.svg" alt="" className="w-10 h-10 mt-[24px]" />
                             </div>
                         </div>
 
@@ -99,16 +99,16 @@ export default function Dashboard() {
             <div className="bg-primary-image-mobile md:bg-primary-image h-[400px] md:h-[700px]">
                 <Header />
             </div>
-            <section className="flex w-full items-center justify-center mt-9 md:mt-20">
+            <section className="flex w-full items-center justify-center mt-[40px] md:mt-[80px]">
                 <div className="flex bg-white justify-center text-center items-center flex-col gap-6 md:gap-4 w-full max-w-[1050px] px-4 md:px-5 lg:px-2">
                     <div>
-                        <h1 className="text-[24px] md:text-[32px] leading-none font-bold text-black_light">
+                        <h1 className="text-[24px] md:text-[32px] leading-[100%] font-bold text-black_light">
                             What’s GALK?
                         </h1>
-                        <hr className="w-[60px] border-2 border-white_light mt-3 mx-auto" />
+                        <hr className="w-[60px] border-2 border-white_light mt-4 mx-auto" />
                     </div>
                     <div>
-                        <p className="md:text-[20px]  text-[15px] font-normal text-black_light max-w-[900px] w-full text-center leading-[24px] md:leading-[32px] pt-[1px] py-0">
+                        <p className="md:text-[20px]  text-[15px] font-normal text-black_light max-w-[900px] w-full text-center leading-[24px] md:leading-[160%] py-0 md:mt-6">
                             <span>
                                 We offer a two-month summer internship program at a Japanese company <br className="hidden md:block" />
                                 for job-seeking students of the Indian Institute of Technology.
@@ -120,26 +120,26 @@ export default function Dashboard() {
                         </p>
                     </div>
 
-                    <div className="w-full grid grid-cols-1 md:grid-cols-3 md:gap-3 gap-2 -mt-1  md:mt-6">
-                        <img src="/images/db1.png" alt="" className="xl:w-full md:w-[250px] w-full h-[172px]  md:h-[164px] " />
-                        <img src="/images/db2.png" alt="" className="xl:w-full md:w-[250px] w-full h-[172px]  md:h-[164px] " />
-                        <img src="/images/db3.png" alt="" className="xl:w-full md:w-[250px] w-full h-[172px]  md:h-[164px] " />
+                    <div className="w-full grid grid-cols-1 md:grid-cols-3 md:gap-3 gap-2 place-items-center  md:mt-6">
+                        <img src="/images/db1.png" alt="" className="xl:w-full md:w-[250px] w-[343px] h-[173px]  md:h-[164px] " />
+                        <img src="/images/db2.png" alt="" className="xl:w-full md:w-[250px] w-[343px] h-[173px]  md:h-[164px] " />
+                        <img src="/images/db3.png" alt="" className="xl:w-full md:w-[250px] w-[343px] h-[173px]  md:h-[164px] " />
                     </div>
                 </div>
             </section>
             <section className="w-full flex flex-col justify-center items-center overflow-x-hidden mt-[40px] md:mt-[101px]">
-                <h1 className="max-w-[1050px] xl:text-[80px] text-[26px] text-center leading-none font-semibold text-gray-100 w-full z-[3] px-2 md:px-0">
+                <h1 className="max-w-[1050px] md:text-[57px]  lg:text-[72px] xl:text-[80px] text-[26px] text-center leading-[100%] font-semibold text-gray-100 w-full z-[3] px-2 md:px-0">
                     GALK SUMMER INTERNSHIP
                 </h1>
-                <div className=" w-full md:px-2 pt-10 md:pt-20 bg-gray-100 pb-[40px] md:pb-[74px] -mt-[5px] md:-mt-1.5 xl:-mt-3">
+                <div className=" w-full md:px-2 pt-10 md:pt-20 bg-gray-100 pb-[40px] md:pb-[74px] -mt-[5px] md:-mt-3 lg:-mt-3 xl:-mt-3">
                     <div className="max-w-[1050px] mx-auto">
-                        <div className="flex gap-1 items-center px-4 md:px-5 py-0 w-fit relative">
+                        <div className="flex gap-1 items-center px-4 md:pr-5 md:pl-[6px] py-0 w-fit relative">
                             <h1 className="text-[24px] md:text-[32px] md:leading-[100%] font-bold text-black_light">
                                 How to get Internship?
                             </h1>
                             <img src="/images/plane.svg" alt="" className="lg:w-[200px] lg:h-auto w-[105px] absolute -right-[80px] -top-6 lg:-right-[187px] lg:-top-9" />
                         </div>
-                        <div className="flex justify-start mt-5 md:mt-10 pl-16 w-full relative">
+                        <div className="flex justify-start mt-5 md:mt-10 pl-16 md:pl-15 w-full relative">
                             <Stepper2 />
                             <img src="/images/screen.svg" alt="" className="w-[220px] h-auto absolute left-[17%] top-[60%] md:top-[50%] lg:top-[50%] md:left-[9.5%] lg:left-[7.5%] xl:top-[51%]" />
                         </div>
@@ -152,15 +152,15 @@ export default function Dashboard() {
             <section className="flex items-center justify-center py-10 md:py-[80px] bg-black_light">
                 <div className="max-w-[1050px] w-full">
                     <div className="text-white w-full md:w-fit relative">
-                        <h1 className="text-white lg:text-[32px] text-[24px] font-bold px-5">
+                        <h1 className="text-white lg:text-[32px] text-[24px] font-bold px-5 lg:pr-6 lg:pl-5">
                             Flow from the start of internship to recruitment
                         </h1>
-                        <img src="/images/recruitmentprocess.svg" alt="" className="lg:w-[301px] lg:h-[247px] w-[109px] h-[102px]  absolute md:left-full right-4 -top-[100px] md:-top-36 lg:-top-14" />
+                        <img src="/images/recruitmentprocess.svg" alt="" className="lg:w-[120px] lg:h-[98px] w-[109px] h-[102px]  absolute md:left-full right-4 -top-[100px] md:-top-36 lg:-top-10" />
                     </div>
-                    <div className="flex justify-left pl-16 md:pl-[78px] mt-[24px] md:mt-[40px]">
+                    <div className="flex justify-left pl-16 md:pl-[78px] mt-[24px] md:mt-[40px] pb-[22px]">
                         <Stepper />
                     </div>
-                    <div className="flex md:flex-row flex-col md:items-center justify-center gap-3 mt-[40px]  md:mt-[60px] px-5 ">
+                    <div className="flex md:flex-row flex-col items-center md:items-center justify-center gap-3 mt-[24px]  md:mt-[60px] px-5 ">
                         <img src="/images/job1.png" alt="" className="xl:w-[324px] md:w-[250px] w-[324px] h-[164px]  md:h-[164px] object-cover aspect-square object-center" />
                         <img src="/images/job2.png" alt="" className="xl:w-[324px] md:w-[250px] w-[324px] h-[164px]  md:h-[164px] object-cover aspect-square object-center" />
                         <img src="/images/job3.png" alt="" className="xl:w-[324px] md:w-[250px] w-[324px] h-[164px]  md:h-[164px] object-cover aspect-square object-center" />
@@ -184,7 +184,7 @@ export default function Dashboard() {
                     </div>
                 </div>
             </section>
-            <div className="lg:overflow-hidden xl:h-[740px] md:mt-[10px] flex items-center justify-center w-full bg-black_light relative">
+            <div className="overflow-hidden xl:h-[740px] md:mt-[10px] flex items-center justify-center w-full bg-black_light relative">
                 <h1 className="text-[162px] font-bold text-gray-500 opacity-60 absolute -right-[300px] rotate-90 xl:block hidden">
                     Instagram
                 </h1>
@@ -200,15 +200,15 @@ export default function Dashboard() {
                         <img src="/images/mobile.svg" alt="" width={70} height={60} className="h-[60px] w-[76px] absolute -top-7 right-2 md:hidden block" />
                     </div>
                     <div className="grid md:grid-cols-4 grid-cols-3 relative mt-[18px]">
-                        <img src="/images/insta1.png" alt="" className="w-full h-[115px] md:h-[252px] md:w-[250px]" />
-                        <img src="/images/insta2.png" alt="" className="w-full h-[115px] md:h-[252px] md:w-[250px]" />
-                        <img src="/images/insta3.png" alt="" className="w-full h-[115px] md:h-[252px] md:w-[250px]" />
-                        <img src="/images/insta4.png" alt="" className="w-full h-[115px] md:h-[252px] md:w-[250px]" />
-                        <img src="/images/insta5.png" alt="" className="w-full h-[115px] md:h-[252px] md:w-[250px]" />
-                        <img src="/images/insta6.png" alt="" className="w-full h-[115px] md:h-[252px] md:w-[250px]" />
-                        <img src="/images/insta7.png" alt="" className="w-full h-[115px] md:h-[252px] md:w-[250px]" />
-                        <img src="/images/insta8.png" alt="" className="w-full h-[115px] md:h-[252px] md:w-[250px]" />
-                        <img src="/images/insta9.png" alt="" className="w-full h-[115px] md:h-[252px] md:w-[250px] block md:hidden" />
+                        <img src="/images/insta01.png" alt="" className="w-full h-auto md:h-[180px] lg:h-[252px] md:w-[250px]" />
+                        <img src="/images/insta02.png" alt="" className="w-full h-auto md:h-[180px] lg:h-[252px] md:w-[250px]" />
+                        <img src="/images/insta03.png" alt="" className="w-full h-auto md:h-[180px] lg:h-[252px] md:w-[250px]" />
+                        <img src="/images/insta04.png" alt="" className="w-full h-auto md:h-[180px] lg:h-[252px] md:w-[250px]" />
+                        <img src="/images/insta05.png" alt="" className="w-full h-auto md:h-[180px] lg:h-[252px] md:w-[250px]" />
+                        <img src="/images/insta06.png" alt="" className="w-full h-auto md:h-[180px] lg:h-[252px] md:w-[250px]" />
+                        <img src="/images/insta07.png" alt="" className="w-full h-auto md:h-[180px] lg:h-[252px] md:w-[250px]" />
+                        <img src="/images/insta08.png" alt="" className="w-full h-auto md:h-[180px] lg:h-[252px] md:w-[250px]" />
+                        <img src="/images/insta9.png" alt="" className="w-full h-auto md:h-[180px] lg:h-[252px] md:w-[250px] block md:hidden" />
                         <div className="flex md:py-8 md:px-16 px-8 py-4   items-center justify-center absolute left-1/2 top-1/2 -translate-y-1/2 bg-white/70 backdrop-blur-sm -translate-x-1/2 border rounded-[30px]">
                             <div className="flex flex-col items-center justify-center gap-3 md:gap-6 w-[180px] md:w-[291px] ">
                                 <img src="/images/logos_instagram.png" className="w-[60x] h-[17px] md:h-[33px] md:w-[115px] " />
@@ -232,13 +232,13 @@ export default function Dashboard() {
             </div>
             <div className="flex items-center justify-center w-full bg-white py-10 md:py-[80px]">
                 <div className="w-full max-w-[1050px] px-5 md:px-6">
-                    <div className="flex gap-2">
-                        <p className="md:text-[32px] text-[24px]   font-bold text-black_light pb-[29px]">
+                    <div className="flex gap-2 ">
+                        <p className="md:text-[32px] text-[24px]   font-bold text-black_light ">
                             FAQ
                         </p>
                         <img src="/images/faq.svg" alt="" className="w-[49px] h-[37px] -mt-[10px] block md:hidden" />
                     </div>
-                    <div className="space-y-[20px]">
+                    <div className="space-y-[20px] mt-[24px]">
                         {
                             Queries.map((Query) => (
                                 <QuestionsListItem Query={Query} />
@@ -271,18 +271,18 @@ export default function Dashboard() {
 
 
 const students = [
-    { name: "Aishwarya Chodavarapu ", college: "IIT GOA / Computer Science and Engineering", image: "/images/ash.svg", image1: "/images/ashm.png", content: <>Firstly, I really liked the company, and the staff is very welcoming and takes excellent care of us. They frequently organise group lunches and ensure our comfort in the new environment.<br />Secondly, I am highly satisfied with the project assigned to us. Through the valuable guidance of the staff, I have had the opportunity to expand my knowledge in the technical field. Working in this company has been an outstanding experience that will prove valuable in the future.<br /> Thirdly, it has always been my dream to work in Japan, and thanks to Willings support, that dream came true. The staff at Willings has been instrumental in assisting us with settling into Japan and resolving any issues we encountered. I am very grateful to Willings for their exceptional care and unwavering support in overcoming personal challenges. <br /> Lastly, I want to add that the Japanese people are renowned for their genuine care and exceptional discipline. Immersing myself in the Japanese work culture has not only shaped me as an individual but has also instilled in me a heightened sense of discipline and personal growth. The diligent work ethic and admirable values I've witnessed in Japan have inspired me to strive for excellence and become a better version of myself.</> },
+    { name: "Aishwarya Chodavarapu ", college: "IIT GOA / Computer Science and Engineering", image: "/images/ash.svg", image1: "/images/ashm.png", content: <span  className="">Firstly, I really liked the company, and the staff is very welcoming and takes excellent care of us. They frequently organise group lunches and ensure our comfort in the new environment.<br />Secondly, I am highly satisfied with the project assigned to us. Through the valuable guidance of the staff, I have had the opportunity to expand my knowledge in the technical field. Working in this company has been an outstanding experience that will prove valuable in the future.<br /> Thirdly, it has always been my dream to work in Japan, and thanks to Willings support, that dream came true. The staff at Willings has been instrumental in assisting us with settling into Japan and resolving any issues we encountered. I am very grateful to Willings for their exceptional care and unwavering support in overcoming personal challenges. <br /> Lastly, I want to add that the Japanese people are renowned for their genuine care and exceptional discipline. Immersing myself in the Japanese work culture has not only shaped me as an individual but has also instilled in me a heightened sense of discipline and personal growth. The diligent work ethic and admirable values I've witnessed in Japan have inspired me to strive for excellence and become a better version of myself.</span> },
     {
         name: "Harsh Agrawal ",
         college: "IIT Guwahait / Mechanical Engineering",
-        image: "/images/harash.png",
+        image: "/images/intern02.png",
         image1: "/images/harashm.png",
         content: <span className="text-[14px] md:text-[16px]">During my internship in Japan, I had an amazing experience, and I found the overall work environment to be enjoyable and fulfilling. The cultural immersion and exposure to a new environment were truly enriching. Japan's unique customs, traditions, and work culture offered a fresh perspective and created an excellent learning environment. The projects here a very intriguing and gives you a different exposure when compared to other places. The way team works and different aspects of corporate world is very smoothly operated here which is a treat to learn as a fresher. The mentors are very helpful and always interested in your ideas and approaches. There is freedom to choose your own path to solve the problem, which helps you grow more. Lastly, I want to express my gratitude for the exceptional support provided by Willings. From the moment I joined the program, they were providing constant support and help whenever required. The biweekly meetings and the feedback system is very helpful and that shows how concerned they are regarding our well being. All the amenities are well provided and are of top quality.Willings consistently went above and beyond to ensure a positive experience for all interns.</span>
     },
     {
         name: "Vaibhav ",
         college: "IIT Ropar / Computer science",
-        image: "/images/valb.png",
+        image: "/images/intern03.png",
         image1: "/images/valbm.png",
         content: <span className="text-[14px] md:text-[16px]"> Before coming to japan I already had a great interest in Japanese culture because of my interest in anime and manga and Japanese cars. I did my internship in Kumamoto which is somewhere at outskirts of Japan but still it is a great town. I saw my dream cars every day. Which motivates me to work more hard to get them. And people of japan are very kind and helpful. I don’t even speak Japanese but still if i try to ask for help from any stranger he do his best to help me always. And people of my company are very sweet and kind. Always there to help me. Even the people who don’t speak English try there best to learn English to speak to me. So that I don’t feel left out in Japan.<br /> Willings support is best. Willings is always there to help you in any kind of way possible. You just tell Willings what you need and they will provide that very fast. Also everyone I met from Willings is so kind and helpful and treats you like a friend. You can share anything with willings </span>
     },
@@ -300,16 +300,16 @@ const students = [
 function StudentListItem({ student }) {
     return (
         <div className="flex flex-col md:flex-row md:gap-4 w-full justify-center items-center md:items-start md:justify-normal">
-            <img src={student.image} alt="" width={110} height={110} className="h-auto w-[110px] mt-2 object-cover object-center aspect-square rounded md:block hidden" />
-            <img src={student.image1} alt="" width={110} height={110} className="h-auto w-[110px] mt-2 object-cover object-center aspect-square rounded  block md:hidden" />
+            <img src={student.image} alt="" width={110} height={110} className="h-auto w-[110px]  object-cover object-center aspect-square rounded md:block hidden " />
+            <img src={student.image1} alt="" width={110} height={110} className="h-auto w-[110px] object-cover object-center aspect-square rounded  block md:hidden" />
             <div className="w-full  flex flex-col items-center md:items-start ">
                 <p className="text-base md:text-[18px]  font-bold text-black_light">
                     {student.name}
                 </p>
-                <p className="text-[14px]  md:text-base font-bold text-center text-gray-200  md:mt-0">
+                <p className="text-[14px]  md:text-[16px] leading-[16px] font-bold text-center text-gray-200  mt-[6px]">
                     {student.college}
                 </p>
-                <p className="text-[14px]  font-normal leading-[22px] text-black_light pt-[12px] w-full max-w-[880px]">
+                <p className="text-[14px]  font-normal leading-[160%] text-black_light mt-[12px] w-full max-w-[880px]">
                     {student.content}
                 </p>
             </div>
