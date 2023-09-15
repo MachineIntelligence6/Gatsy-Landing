@@ -48,7 +48,7 @@ function Header() {
                             <img src="/images/menu.svg" alt="" className="w-[35px] h-auto" onClick={toggleContent} />
                         </div>
                     </div>
-                    <div className="flex flex-col items-center justify-center -mt-[66px] md:-mt-14 gap-[9px] absolute top-full left-1/2 text-center -translate-x-1/2 w-full">
+                    <div className="z-10 flex flex-col items-center justify-center -mt-[66px] md:-mt-14 gap-[9px] absolute top-full left-1/2 text-center -translate-x-1/2 w-full">
                         <div className="text-primary md:text-[42px] text-[22px] font-extrabold bg-secondary  px-5 xl:block leading-[140%] hidden">
                             IIT students <span className="text-white md:text-[36px] text-[18px]">who want to</span> intern <span className="text-white md:text-[36px] text-[18px]">at a</span> Japanese company,
                         </div>
@@ -61,6 +61,10 @@ function Header() {
                         <div className="text-white md:text-[42px] text-[22px] leading-[100%] px-3 py-[3px]  font-extrabold md:px-5 md:py-1 bg-secondary ">
                             Gather round!
                         </div>
+                    </div>
+                    <div className="xl:block hidden">
+                        <img src="/icons/slash.png" alt="" className="w-[137px] h-[157px] absolute left-[120px] top-1/2"/>
+                        <img src="/icons/slash.png" alt="" className="w-[137px] h-[157px] absolute right-[120px] top-1/2"/>
                     </div>
                 </nav>
             </header>
