@@ -15,7 +15,7 @@ function Header() {
         <>
             <header className="w-full">
                 <nav className="text-white w-full backdrop-blur-sm md:h-[181px] h-[140px] pl-4 pr-3 md:px-0 py-4 md:py-5 relative">
-                    <div className="w-full flex items-center justify-between gap-[126px] md:px-14 lg:pe-24">
+                    <div className="w-full flex items-center justify-between gap-[126px] md:pr-14 md:pl-[57px] lg:pe-24">
                         <a className="">
                             <img src="/images/headerlogo.svg" alt="" className="w-[71px] md:w-[117px]" />
                         </a>
@@ -49,16 +49,16 @@ function Header() {
                         </div>
                     </div>
                     <div className="flex flex-col items-center justify-center -mt-[66px] md:-mt-14 gap-[9px] absolute top-full left-1/2 text-center -translate-x-1/2 w-full">
-                        <div className="text-primary md:text-[42px] text-[22px] font-extrabold bg-secondary  px-5 xl:block hidden">
+                        <div className="text-primary md:text-[42px] text-[22px] font-extrabold bg-secondary  px-5 xl:block leading-[140%] hidden">
                             IIT students <span className="text-white md:text-[36px] text-[18px]">who want to</span> intern <span className="text-white md:text-[36px] text-[18px]">at a</span> Japanese company,
                         </div>
-                        <div className="text-primary md:text-[42px] text-[22px] font-extrabold bg-secondary  md:px-5 px-3 lg:block xl:hidden">
+                        <div className="text-primary md:text-[42px] text-[22px] font-extrabold bg-secondary  md:px-5 px-3 leading-[140%] lg:block xl:hidden">
                             IIT students <span className="text-white md:text-[36px] text-[18px]">who want to</span> intern
                         </div>
-                        <div className="text-primary md:text-[42px] text-[22px] font-extrabold bg-secondary  md:px-5 px-3 lg:block">
+                        <div className="text-primary md:text-[42px] text-[22px] font-extrabold bg-secondary leading-[140%]  md:px-5 px-3 md:block xl:hidden">
                             <span className="text-white md:text-[36px] text-[18px]">at a</span> Japanese company,
                         </div>
-                        <div className="text-white md:text-[42px] text-[22px] leading-[100%] px-3 py-[3px] font-extrabold md:px-5 md:py-1 bg-secondary ">
+                        <div className="text-white md:text-[42px] text-[22px] leading-[100%] px-3 py-[3px]  font-extrabold md:px-5 md:py-1 bg-secondary ">
                             Gather round!
                         </div>
                     </div>
@@ -100,15 +100,15 @@ export default function Dashboard() {
                 <Header />
             </div>
             <section className="flex w-full items-center justify-center mt-[40px] md:mt-[80px]">
-                <div className="flex bg-white justify-center text-center items-center flex-col gap-6 md:gap-4 w-full max-w-[1050px] px-4 md:px-5 lg:px-2">
+                <div className="flex bg-white justify-center text-center items-center flex-col gap-6 md:gap-4 w-full max-w-[1062px] px-4 md:px-5 lg:px-2">
                     <div>
                         <h1 className="text-[24px] md:text-[32px] leading-[100%] font-bold text-black_light">
                             What’s GALK?
                         </h1>
-                        <hr className="w-[60px] border-2 border-white_light mt-4 mx-auto" />
+                        <hr className="w-[60px] border-[3px] border-white_light mt-4 mx-auto" />
                     </div>
                     <div>
-                        <p className="md:text-[20px]  text-[15px] font-normal text-black_light max-w-[900px] w-full text-center leading-[24px] md:leading-[160%] py-0 md:mt-6">
+                        <p className="md:text-[20px]  text-[14px] font-normal text-black_light max-w-[900px] w-full text-center leading-[24px] md:leading-[160%] py-0 md:mt-6">
                             <span>
                                 We offer a two-month summer internship program at a Japanese company <br className="hidden md:block" />
                                 for job-seeking students of the Indian Institute of Technology.
@@ -128,18 +128,18 @@ export default function Dashboard() {
                 </div>
             </section>
             <section className="w-full flex flex-col justify-center items-center overflow-x-hidden mt-[40px] md:mt-[101px]">
-                <h1 className="max-w-[1050px] md:text-[57px]  lg:text-[72px] xl:text-[80px] text-[26px] text-center leading-[100%] font-semibold text-gray-100 w-full z-[3] px-2 md:px-0">
+                <h1 className="max-w-[1062px] md:text-[57px]  lg:text-[72px] xl:text-[76.6px] text-[26px] text-center leading-[100%] font-semibold text-gray-100 w-full z-[3] px-2 md:px-0">
                     GALK SUMMER INTERNSHIP
                 </h1>
                 <div className=" w-full md:px-2 pt-10 md:pt-20 bg-gray-100 pb-[40px] md:pb-[74px] -mt-[5px] md:-mt-3 lg:-mt-3 xl:-mt-3">
-                    <div className="max-w-[1050px] mx-auto">
+                    <div className="max-w-[1062px] mx-auto">
                         <div className="flex gap-1 items-center px-4 md:pr-5 md:pl-[6px] py-0 w-fit relative">
                             <h1 className="text-[24px] md:text-[32px] md:leading-[100%] font-bold text-black_light">
                                 How to get Internship?
                             </h1>
                             <img src="/images/plane.svg" alt="" className="lg:w-[200px] lg:h-auto w-[105px] absolute -right-[80px] -top-6 lg:-right-[187px] lg:-top-9" />
                         </div>
-                        <div className="flex justify-start mt-5 md:mt-10 pl-16 md:pl-15 w-full relative">
+                        <div className="flex justify-start mt-5 md:mt-10 pl-16 md:pl-[63px] w-full relative">
                             <Stepper2 />
                             <img src="/images/screen.svg" alt="" className="w-[220px] h-auto absolute left-[17%] top-[60%] md:top-[50%] lg:top-[50%] md:left-[9.5%] lg:left-[7.5%] xl:top-[51%]" />
                         </div>
@@ -150,17 +150,17 @@ export default function Dashboard() {
                 </div>
             </section>
             <section className="flex items-center justify-center py-10 md:py-[80px] bg-black_light">
-                <div className="max-w-[1050px] w-full">
+                <div className="max-w-[1062px] w-full">
                     <div className="text-white w-full md:w-fit relative">
-                        <h1 className="text-white lg:text-[32px] text-[24px] font-bold px-5 lg:pr-6 lg:pl-5">
+                        <h1 className="text-white lg:text-[32px] text-[24px] font-bold px-5 lg:pr-6 lg:pl-2">
                             Flow from the start of internship to recruitment
                         </h1>
                         <img src="/images/recruitmentprocess.svg" alt="" className="lg:w-[120px] lg:h-[98px] w-[109px] h-[102px]  absolute md:left-full right-4 -top-[100px] md:-top-36 lg:-top-10" />
                     </div>
-                    <div className="flex justify-left pl-16 md:pl-[67px] lg:pl-[78px] mt-[24px] md:mt-[40px] pb-[22px]">
+                    <div className="flex justify-left pl-16 md:pl-[67px] lg:pl-[65px] mt-[24px] md:mt-[40px] lg:mt-[60px] pb-[20px]">
                         <Stepper />
                     </div>
-                    <div className="flex md:flex-row flex-col items-center md:items-center justify-center gap-3 mt-[24px]  md:mt-[60px] px-5 ">
+                    <div className="flex md:flex-row flex-col items-center md:items-center  justify-start gap-3 mt-[24px]  md:mt-[60px] px-[11px] ">
                         <img src="/images/job1.png" alt="" className="xl:w-[324px] md:w-[250px] w-[324px] h-[164px]  md:h-[164px] object-cover aspect-square object-center" />
                         <img src="/images/job2.png" alt="" className="xl:w-[324px] md:w-[250px] w-[324px] h-[164px]  md:h-[164px] object-cover aspect-square object-center" />
                         <img src="/images/job3.png" alt="" className="xl:w-[324px] md:w-[250px] w-[324px] h-[164px]  md:h-[164px] object-cover aspect-square object-center" />
@@ -168,7 +168,7 @@ export default function Dashboard() {
                 </div>
             </section>
             <section className="flex items-center justify-center w-full mt-10 md:mt-[78px]">
-                <div className="bg-white w-full max-w-[1050px] px-4 md:pl-7 md:pr-4 pb-[40px] md:pb-[80px]">
+                <div className="bg-white w-full max-w-[1062px] px-4 md:pl-3 md:pr-4 pb-[40px] md:pb-[80px]">
                     <div className="flex md:gap-7 gap-[14px]">
                         <p className="md:text-[32px] text-[24px]  font-bold text-black_light">
                             Comment from intern
@@ -184,30 +184,30 @@ export default function Dashboard() {
                     </div>
                 </div>
             </section>
-            <div className="overflow-hidden xl:h-[740px] md:mt-[10px] flex items-center justify-center w-full bg-black_light relative">
+            <div className="overflow xl:h-[740px] md:mt-[10px] flex items-center justify-center w-full bg-black_light relative">
                 <h1 className="text-[162px] font-bold text-gray-500 opacity-60 absolute -right-[300px] rotate-90 xl:block hidden">
                     Instagram
                 </h1>
                 <h1 className="text-[162px] font-bold text-gray-500 opacity-60 absolute -left-[300px] -rotate-90 xl:block hidden">
                     Instagram
                 </h1>
-                <div className="w-full max-w-[1050px] px-5 pt-[40px] md:pt-[55px] pb-[40px] md:pb-[72px] relative">
-                    <div className="flex md:gap-4 items-center justify-center w-full md:ml-10">
+                <div className="w-full max-w-[1062px] md:px-[10px] px-5 pt-[40px] md:pt-[55px] pb-[40px] md:mb-[72px] relative">
+                    <div className="flex md:gap-4 items-center justify-center w-full md:ml-8">
                         <p className="text-[24px]  md:text-[32px] font-semibold text-white text-center md:text-start w-fit md:mt-2">
                             Please follow our Instagram!
                         </p>
                         <img src="/images/mobile.svg" alt="" width={94} height={74} className="w-[100px] h-auto md:block hidden" />
-                        <img src="/images/mobile.svg" alt="" width={70} height={60} className="h-[60px] w-[76px] absolute -top-7 right-2 md:hidden block" />
+                        <img src="/images/mobile.svg" alt="" width={70} height={60} className="h-[60px] w-[76px] absolute -top-7 right-2   md:hidden block" />
                     </div>
                     <div className="grid md:grid-cols-4 grid-cols-3 relative mt-[18px]">
-                        <img src="/images/insta01.png" alt="" className="w-full h-auto md:h-[180px] lg:h-[252px] md:w-[250px]" />
-                        <img src="/images/insta02.png" alt="" className="w-full h-auto md:h-[180px] lg:h-[252px] md:w-[250px]" />
-                        <img src="/images/insta03.png" alt="" className="w-full h-auto md:h-[180px] lg:h-[252px] md:w-[250px]" />
-                        <img src="/images/insta04.png" alt="" className="w-full h-auto md:h-[180px] lg:h-[252px] md:w-[250px]" />
-                        <img src="/images/insta05.png" alt="" className="w-full h-auto md:h-[180px] lg:h-[252px] md:w-[250px]" />
-                        <img src="/images/insta06.png" alt="" className="w-full h-auto md:h-[180px] lg:h-[252px] md:w-[250px]" />
-                        <img src="/images/insta07.png" alt="" className="w-full h-auto md:h-[180px] lg:h-[252px] md:w-[250px]" />
-                        <img src="/images/insta08.png" alt="" className="w-full h-auto md:h-[180px] lg:h-[252px] md:w-[250px]" />
+                        <img src="/images/insta01.png" alt="" className="w-full h-auto md:h-[180px] lg:h-[252px] md:w-[250px] xl:w-full" />
+                        <img src="/images/insta02.png" alt="" className="w-full h-auto md:h-[180px] lg:h-[252px] md:w-[250px] xl:w-full" />
+                        <img src="/images/insta03.png" alt="" className="w-full h-auto md:h-[180px] lg:h-[252px] md:w-[250px] xl:w-full" />
+                        <img src="/images/insta04.png" alt="" className="w-full h-auto md:h-[180px] lg:h-[252px] md:w-[250px] xl:w-full" />
+                        <img src="/images/insta05.png" alt="" className="w-full h-auto md:h-[180px] lg:h-[252px] md:w-[250px] xl:w-full" />
+                        <img src="/images/insta06.png" alt="" className="w-full h-auto md:h-[180px] lg:h-[252px] md:w-[250px] xl:w-full" />
+                        <img src="/images/insta07.png" alt="" className="w-full h-auto md:h-[180px] lg:h-[252px] md:w-[250px] xl:w-full" />
+                        <img src="/images/insta08.png" alt="" className="w-full h-auto md:h-[180px] lg:h-[252px] md:w-[250px] xl:w-full" />
                         <img src="/images/insta9.png" alt="" className="w-full h-auto md:h-[180px] lg:h-[252px] md:w-[250px] block md:hidden" />
                         <div className="flex md:py-8 md:px-16 px-8 py-4   items-center justify-center absolute left-1/2 top-1/2 -translate-y-1/2 bg-white/70 backdrop-blur-sm -translate-x-1/2 border rounded-[30px]">
                             <div className="flex flex-col items-center justify-center gap-3 md:gap-6 w-[180px] md:w-[291px] ">
@@ -231,7 +231,7 @@ export default function Dashboard() {
                 </div>
             </div>
             <div className="flex items-center justify-center w-full bg-white py-10 md:py-[80px]">
-                <div className="w-full max-w-[1050px] px-5 md:px-6">
+                <div className="w-full max-w-[1062px] px-5 md:px-[9px]">
                     <div className="flex gap-2 ">
                         <p className="md:text-[32px] text-[24px]   font-bold text-black_light ">
                             FAQ
@@ -303,10 +303,10 @@ function StudentListItem({ student }) {
             <img src={student.image} alt="" width={110} height={110} className="h-auto w-[110px]  object-cover object-center aspect-square rounded md:block hidden " />
             <img src={student.image1} alt="" width={110} height={110} className="h-auto w-[110px] object-cover object-center aspect-square rounded  block md:hidden" />
             <div className="w-full  flex flex-col items-center md:items-start ">
-                <p className="text-[16px] md:text-[18px]  font-bold text-black_light">
+                <p className="text-[16px] md:text-[18px]  leading-[100%] font-bold text-black_light mt-2 md:mt-0">
                     {student.name}
                 </p>
-                <p className="text-[14px]  md:text-[16px] leading-[16px] font-bold text-center text-gray-200  mt-[6px]">
+                <p className="text-[14px]  md:text-[16px] leading-[100%] font-bold text-center text-gray-200  mt-[6px]">
                     {student.college}
                 </p>
                 <p className="text-[14px]  font-normal leading-[160%] text-black_light mt-[12px] w-full max-w-[880px]">
@@ -337,16 +337,16 @@ function QuestionsListItem({ Query }) {
     return (
         <div className=" w-full">
             <div className="flex items-center md:items-start gap-[10px] bg-gray-100 p-3">
-                <p className="text-[20px]  font-bold text-black_light">
+                <p className="text-[20px]  font-bold text-black_light leading-[100%]">
                     {Query.query}
                 </p>
-                <p className="text-[16px] font-medium text-black_light mt-1">
+                <p className="text-[16px] font-medium text-black_light mt-1 leading-[100%]">
                     {Query.question}
                 </p>
 
             </div>
             <div className="pt-4 md:pl-9 max-w-[940px]">
-                <p className="text-[15px] font-normal ">
+                <p className="text-[15px] font-normal leading-[160%] ">
                     {Query.answer}
                 </p>
             </div>
