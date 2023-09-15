@@ -37,7 +37,7 @@ function Header() {
                                 FAQ
                             </a>
                         </div>
-                        <a href="#" className="xl:block hidden">
+                        <a href="https://www.instagram.com/galk_willings/" className="xl:block hidden">
                             <img src="/images/Instagram_logo.svg" alt="" />
                         </a>
                         <div className="xl:hidden">
@@ -75,12 +75,14 @@ function Header() {
                                 <img src="/sidebar.svg" alt="" className="min-h-[730px] h-auto" />
                             </div>
                             <div className="flex flex-col pl-8">
-                                <p className="text-white text-[20px] py-[24px] font-medium">What’s GALK</p>
-                                <p className="text-white text-[20px] py-[24px] font-medium">How to get Internship</p>
-                                <p className="text-white text-[20px] py-[24px] font-medium">Flow to recruitment</p>
-                                <p className="text-white text-[20px] py-[24px] font-medium">Comment from intern</p>
-                                <p className="text-white text-[20px] py-[24px] font-medium">FAQ</p>
-                                <img src="/images/Instagram_logo.svg" alt="" className="w-10 h-10 mt-[24px]" />
+                                <a className="text-white text-[20px] py-[24px] font-medium">What’s GALK</a>
+                                <a className="text-white text-[20px] py-[24px] font-medium">How to get Internship</a>
+                                <a className="text-white text-[20px] py-[24px] font-medium">Flow to recruitment</a>
+                                <a className="text-white text-[20px] py-[24px] font-medium">Comment from intern</a>
+                                <a className="text-white text-[20px] py-[24px] font-medium">FAQ</a>
+                                <a href="https://www.instagram.com/galk_willings/">
+                                    <img src="/images/Instagram_logo.svg" alt="" className="w-10 h-10 mt-[24px]" />
+                                </a>
                             </div>
                         </div>
 
@@ -216,10 +218,10 @@ export default function Dashboard() {
                                 <p className="text-[16px] text-black-500 pb-2">
                                     @galk_willings
                                 </p>
-                                <button className="h-[30px] lg:h-[57px] px-[20px] gap-[24px] flex items-center justify-center md:py-[14px] text-[10px] md:text-[18px]  relative font-normal  text-white rounded-full border primary-btn w-full">
+                                <a href="https://www.instagram.com/galk_willings/" className="h-[30px] lg:h-[57px] px-[20px] gap-[24px] flex items-center justify-center md:py-[14px] text-[10px] md:text-[18px]  relative font-normal  text-white rounded-full border primary-btn w-full">
                                     Follow Us!!
                                     <ChevronRightIcon className="w-4 h-4 absolute right-3 lg:right-6" />
-                                </button>
+                                </a>
                             </div>
 
 
@@ -271,7 +273,7 @@ export default function Dashboard() {
 
 
 const students = [
-    { name: "Aishwarya Chodavarapu ", college: "IIT GOA / Computer Science and Engineering", image: "/images/ash.svg", image1: "/images/ashm.png", content: <span  className="">Firstly, I really liked the company, and the staff is very welcoming and takes excellent care of us. They frequently organise group lunches and ensure our comfort in the new environment.<br />Secondly, I am highly satisfied with the project assigned to us. Through the valuable guidance of the staff, I have had the opportunity to expand my knowledge in the technical field. Working in this company has been an outstanding experience that will prove valuable in the future.<br /> Thirdly, it has always been my dream to work in Japan, and thanks to Willings support, that dream came true. The staff at Willings has been instrumental in assisting us with settling into Japan and resolving any issues we encountered. I am very grateful to Willings for their exceptional care and unwavering support in overcoming personal challenges. <br /> Lastly, I want to add that the Japanese people are renowned for their genuine care and exceptional discipline. Immersing myself in the Japanese work culture has not only shaped me as an individual but has also instilled in me a heightened sense of discipline and personal growth. The diligent work ethic and admirable values I've witnessed in Japan have inspired me to strive for excellence and become a better version of myself.</span> },
+    { name: "Aishwarya Chodavarapu ", college: "IIT GOA / Computer Science and Engineering", image: "/images/ash.svg", image1: "/images/ashm.png", content: <span className="">Firstly, I really liked the company, and the staff is very welcoming and takes excellent care of us. They frequently organise group lunches and ensure our comfort in the new environment.<br />Secondly, I am highly satisfied with the project assigned to us. Through the valuable guidance of the staff, I have had the opportunity to expand my knowledge in the technical field. Working in this company has been an outstanding experience that will prove valuable in the future.<br /> Thirdly, it has always been my dream to work in Japan, and thanks to Willings support, that dream came true. The staff at Willings has been instrumental in assisting us with settling into Japan and resolving any issues we encountered. I am very grateful to Willings for their exceptional care and unwavering support in overcoming personal challenges. <br /> Lastly, I want to add that the Japanese people are renowned for their genuine care and exceptional discipline. Immersing myself in the Japanese work culture has not only shaped me as an individual but has also instilled in me a heightened sense of discipline and personal growth. The diligent work ethic and admirable values I've witnessed in Japan have inspired me to strive for excellence and become a better version of myself.</span> },
     {
         name: "Harsh Agrawal ",
         college: "IIT Guwahait / Mechanical Engineering",

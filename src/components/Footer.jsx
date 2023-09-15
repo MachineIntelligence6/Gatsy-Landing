@@ -26,7 +26,7 @@ export default function Footer() {
                         FAQ
                     </a>
                 </div>
-                <a href="">
+                <a href="https://www.instagram.com/galk_willings/">
                     <img src="/images/instafooter.svg" alt="" width={40} height={40} className="h-full  w-auto aspect-square object-cover object-center" />
                 </a>
                 <a className="text-[12px] font-medium text-gray-400">
