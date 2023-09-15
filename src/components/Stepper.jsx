@@ -36,7 +36,7 @@ function Step({ content, heading }) {
                 </div>
             </div>
             <div class="absolute right-full mt-0 mr-2">
-                <p class=" ml-5 lg:text-[16px] text-[12px] font-bold">
+                <p class="ml-5 md:ml-0 lg:text-[16px] text-[12px] font-bold">
                     {heading}
                 </p>
             </div>

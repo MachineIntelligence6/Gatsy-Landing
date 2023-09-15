@@ -49,13 +49,13 @@ function Header() {
                         </div>
                     </div>
                     <div className="flex flex-col items-center justify-center -mt-[66px] md:-mt-14 gap-[9px] absolute top-full left-1/2 text-center -translate-x-1/2 w-full">
-                        <div className="text-primary md:text-[42px] text-[22px] font-extrabold bg-secondary  px-5 md:block hidden">
+                        <div className="text-primary md:text-[42px] text-[22px] font-extrabold bg-secondary  px-5 xl:block hidden">
                             IIT students <span className="text-white md:text-[36px] text-[18px]">who want to</span> intern <span className="text-white md:text-[36px] text-[18px]">at a</span> Japanese company,
                         </div>
-                        <div className="text-primary md:text-[42px] text-[22px] font-extrabold bg-secondary  md:px-5 px-3 block md:hidden">
+                        <div className="text-primary md:text-[42px] text-[22px] font-extrabold bg-secondary  md:px-5 px-3 lg:block xl:hidden">
                             IIT students <span className="text-white md:text-[36px] text-[18px]">who want to</span> intern
                         </div>
-                        <div className="text-primary md:text-[42px] text-[22px] font-extrabold bg-secondary  md:px-5 px-3 block md:hidden">
+                        <div className="text-primary md:text-[42px] text-[22px] font-extrabold bg-secondary  md:px-5 px-3 lg:block">
                             <span className="text-white md:text-[36px] text-[18px]">at a</span> Japanese company,
                         </div>
                         <div className="text-white md:text-[42px] text-[22px] leading-[100%] px-3 py-[3px] font-extrabold md:px-5 md:py-1 bg-secondary ">
@@ -157,7 +157,7 @@ export default function Dashboard() {
                         </h1>
                         <img src="/images/recruitmentprocess.svg" alt="" className="lg:w-[120px] lg:h-[98px] w-[109px] h-[102px]  absolute md:left-full right-4 -top-[100px] md:-top-36 lg:-top-10" />
                     </div>
-                    <div className="flex justify-left pl-16 md:pl-[78px] mt-[24px] md:mt-[40px] pb-[22px]">
+                    <div className="flex justify-left pl-16 md:pl-[67px] lg:pl-[78px] mt-[24px] md:mt-[40px] pb-[22px]">
                         <Stepper />
                     </div>
                     <div className="flex md:flex-row flex-col items-center md:items-center justify-center gap-3 mt-[24px]  md:mt-[60px] px-5 ">
@@ -303,7 +303,7 @@ function StudentListItem({ student }) {
             <img src={student.image} alt="" width={110} height={110} className="h-auto w-[110px]  object-cover object-center aspect-square rounded md:block hidden " />
             <img src={student.image1} alt="" width={110} height={110} className="h-auto w-[110px] object-cover object-center aspect-square rounded  block md:hidden" />
             <div className="w-full  flex flex-col items-center md:items-start ">
-                <p className="text-base md:text-[18px]  font-bold text-black_light">
+                <p className="text-[16px] md:text-[18px]  font-bold text-black_light">
                     {student.name}
                 </p>
                 <p className="text-[14px]  md:text-[16px] leading-[16px] font-bold text-center text-gray-200  mt-[6px]">
