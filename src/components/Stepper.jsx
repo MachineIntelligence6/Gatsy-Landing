@@ -68,7 +68,7 @@ function Step2({ content, heading }) {
                     {heading}
                 </p>
             </div>
-            <div class="absolute top-0 left-full ml-3 w-[67vw] md:w-[80vw] lg:ml-5 lg:w-[60vw]   lg:mt-0">
+            <div class="absolute top-0 left-full ml-5 w-[67vw] md:w-[80vw] lg:ml-5 lg:w-[60vw]   lg:mt-0">
                 <p class="text-[14px] lg:text-[16px] font-normal w-full">
                     {content}
                 </p>

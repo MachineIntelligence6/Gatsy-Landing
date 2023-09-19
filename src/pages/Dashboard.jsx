@@ -147,9 +147,9 @@ export default function Dashboard() {
                         </div>
                         <div className="flex justify-start mt-5 md:mt-10 pl-16 md:pl-[63px] w-full relative">
                             <Stepper2 />
-                            <img src="/images/screen.svg" alt="" className="w-[220px] h-auto absolute left-[18%] top-[60%] md:top-[50%] lg:top-[50%] md:left-[9.5%] lg:left-[7.5%] xl:top-[51%]" />
+                            <img src="/images/screen.svg" alt="" className="w-[220px] h-auto absolute left-[77px] top-[60%] md:top-[50%] lg:top-[50%] md:left-[9.5%] lg:left-[7.5%] xl:top-[51%]" />
                         </div>
-                        <div className="md:pl-[72px] lg:pl-[80px] pl-[66px] mt-24 md:mt-14 xl:mt-9 w-full">
+                        <div className="md:pl-[72px] lg:pl-[80px] pl-[77px] mt-24 md:mt-14 xl:mt-9 w-full">
                             <img src="/images/screen2.svg" alt="" className="w-[220px] h-auto" />
                         </div>
                     </div>
