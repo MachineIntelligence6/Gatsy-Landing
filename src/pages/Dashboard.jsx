@@ -21,23 +21,23 @@ function Header() {
                         </a>
 
                         <div className="xl:flex items-start justify-between gap-[50px] hidden">
-                            <a href="#" className="text-white text-[18px] font-normal">
+                            <a href="#galk" className="text-white text-[18px] font-normal">
                                 What’s GALK
                             </a>
-                            <a href="#" className="text-white text-[18px] font-normal">
+                            <a href="#internship" className="text-white text-[18px] font-normal">
                                 How to get Internship
                             </a>
-                            <a href="#" className="text-white text-[18px] font-normal">
+                            <a href="#recruitment" className="text-white text-[18px] font-normal">
                                 Flow to recruitment
                             </a>
-                            <a href="#" className="text-white text-[18px] font-normal">
+                            <a href="#comment"className="text-white text-[18px] font-normal">
                                 Comment from intern
                             </a>
-                            <a href="#" className="text-white text-[18px] font-normal">
+                            <a href="#faq" className="text-white text-[18px] font-normal">
                                 FAQ
                             </a>
                         </div>
-                        <a href="https://www.instagram.com/galk_willings/" className="xl:block hidden">
+                        <a href="https://www.instagram.com/galk_willings/" target="_blank" className="xl:block hidden">
                             <img src="/images/Instagram_logo.svg" alt="" />
                         </a>
                         <div className="xl:hidden">
@@ -70,7 +70,7 @@ function Header() {
             </header>
             {isContentOpen && (
                 <div className="bg-black/[0.65] z-50 min-h-[calc(100vh_+_10px)] h-screen max-h-screen overflow-y-auto fixed w-full flex justify-end  top-0 right-0">
-                    <div className="w-[90%] bg-black-500 space-y-[40px]">
+                    <div className="w-[90%] bg-black-500 space-y-[40px] ">
                         <div className="flex justify-end pt-[25px] px-4 hover:cursor-pointer text-white">
                             <Cross1Icon onClick={toggleContent} className="w-7 h-7" />
                         </div>
@@ -79,12 +79,12 @@ function Header() {
                                 <img src="/sidebar.svg" alt="" className="min-h-[730px] h-auto" />
                             </div>
                             <div className="flex flex-col pl-8">
-                                <a className="text-white text-[20px] py-[24px] font-medium">What’s GALK</a>
-                                <a className="text-white text-[20px] py-[24px] font-medium">How to get Internship</a>
-                                <a className="text-white text-[20px] py-[24px] font-medium">Flow to recruitment</a>
-                                <a className="text-white text-[20px] py-[24px] font-medium">Comment from intern</a>
-                                <a className="text-white text-[20px] py-[24px] font-medium">FAQ</a>
-                                <a href="https://www.instagram.com/galk_willings/">
+                                <a className="text-white text-[20px] py-[24px] font-medium" href="#galk">What’s GALK</a>
+                                <a className="text-white text-[20px] py-[24px] font-medium" href="#internship">How to get Internship</a>
+                                <a className="text-white text-[20px] py-[24px] font-medium" href="#recruitment">Flow to recruitment</a>
+                                <a className="text-white text-[20px] py-[24px] font-medium" href="#comment">Comment from intern</a>
+                                <a className="text-white text-[20px] py-[24px] font-medium" href="#faq">FAQ</a>
+                                <a href="https://www.instagram.com/galk_willings/" target="_blank">
                                     <img src="/images/Instagram_logo.svg" alt="" className="w-10 h-10 mt-[24px]" />
                                 </a>
                             </div>
@@ -105,10 +105,10 @@ export default function Dashboard() {
             <div className="bg-primary-image-mobile md:bg-primary-image h-[400px] md:h-[700px]">
                 <Header />
             </div>
-            <section className="flex w-full items-center justify-center mt-[40px] md:mt-[80px]">
-                <div className="flex bg-white justify-center text-center items-center flex-col gap-6 md:gap-4 w-full max-w-[1062px] px-4 md:px-5 lg:px-2">
+            <section id="galk" className="flex w-full items-center justify-center pt-[40px] md:pt-[80px]">
+                <div  className="flex bg-white justify-center text-center items-center flex-col gap-6 md:gap-4 w-full max-w-[1062px] px-4 md:px-5 lg:px-2">
                     <div>
-                        <h1 className="text-[24px] md:text-[32px] leading-[100%] font-bold text-black_light">
+                        <h1   className="text-[24px] md:text-[32px] leading-[100%] font-bold text-black_light">
                             What’s GALK?
                         </h1>
                         <hr className="w-[60px] border-[3px] border-white_light mt-4 mx-auto" />
@@ -127,17 +127,17 @@ export default function Dashboard() {
                     </div>
 
                     <div className="w-full grid grid-cols-1 md:grid-cols-3 md:gap-3 gap-2 place-items-center  md:mt-6">
-                        <img src="/images/db1.png" alt="" className="xl:w-full md:w-[250px] w-[343px] h-[173px]  md:h-[164px] " />
-                        <img src="/images/db2.png" alt="" className="xl:w-full md:w-[250px] w-[343px] h-[173px]  md:h-[164px] " />
-                        <img src="/images/db3.png" alt="" className="xl:w-full md:w-[250px] w-[343px] h-[173px]  md:h-[164px] " />
+                        <img src="/images/db1.png" alt="" className="lg:w-[324px] md:w-[250px] w-[343px] h-[173px]  md:h-[164px] " />
+                        <img src="/images/db2.png" alt="" className="lg:w-[324px] md:w-[250px] w-[343px] h-[173px]  md:h-[164px] " />
+                        <img src="/images/db3.png" alt="" className="lg:w-[324px] md:w-[250px] w-[343px] h-[173px]  md:h-[164px] " />
                     </div>
                 </div>
             </section>
-            <section className="w-full flex flex-col justify-center items-center overflow-x-hidden mt-[40px] md:mt-[101px]">
+            <section id="internship" className="w-full flex flex-col justify-center items-center overflow-x-hidden mt-[40px] md:mt-[101px]">
                 <h1 className="max-w-[1062px] md:text-[57px]  lg:text-[72px] xl:text-[76.6px] text-[26px] text-center leading-[100%] font-semibold text-gray-100 w-full z-[3] px-2 md:px-0">
                     GALK SUMMER INTERNSHIP
                 </h1>
-                <div className=" w-full md:px-2 pt-10 md:pt-20 bg-gray-100 pb-[40px] md:pb-[74px] -mt-[5px] md:-mt-3 lg:-mt-3 xl:-mt-3">
+                <div className=" w-full md:px-2 pt-10 md:pt-20 bg-gray-100 pb-[40px] md:pb-[74px] -mt-[5px] md:-mt-3 lg:-mt-3 xl:-mt-3" id="internship">
                     <div className="max-w-[1062px] mx-auto">
                         <div className="flex gap-1 items-center px-4 md:pr-5 md:pl-[6px] py-0 w-fit relative">
                             <h1 className="text-[24px] md:text-[32px] md:leading-[100%] font-bold text-black_light">
@@ -155,7 +155,7 @@ export default function Dashboard() {
                     </div>
                 </div>
             </section>
-            <section className="flex items-center justify-center py-10 md:py-[80px] bg-black_light">
+            <section className="flex items-center justify-center py-10 md:py-[80px] bg-black_light" id="recruitment">
                 <div className="max-w-[1062px] w-full">
                     <div className="text-white w-full md:w-fit relative">
                         <h1 className="text-white lg:text-[32px] text-[24px] font-bold px-5 lg:pr-6 lg:pl-2">
@@ -173,9 +173,9 @@ export default function Dashboard() {
                     </div>
                 </div>
             </section>
-            <section className="flex items-center justify-center w-full mt-10 md:mt-[78px]">
+            <section id="comment" className="flex items-center justify-center w-full pt-10 md:pt-[78px]">
                 <div className="bg-white w-full max-w-[1062px] px-4 md:pl-3 md:pr-4 pb-[40px] md:pb-[80px]">
-                    <div className="flex md:gap-7 gap-[14px]">
+                    <div className="flex md:gap-7 gap-[14px]" >
                         <p className="md:text-[32px] text-[24px]  font-bold text-black_light">
                             Comment from intern
                         </p>
@@ -217,12 +217,12 @@ export default function Dashboard() {
                         <img src="/images/insta9.png" alt="" className="w-full h-auto md:h-[180px] lg:h-[252px] md:w-[250px] block md:hidden" />
                         <div className="flex md:py-8 md:px-16 px-8 py-4   items-center justify-center absolute left-1/2 top-1/2 -translate-y-1/2 bg-white/70 backdrop-blur-sm -translate-x-1/2 border rounded-[30px]">
                             <div className="flex flex-col items-center justify-center gap-3 md:gap-6 w-[180px] md:w-[291px] ">
-                                <img src="/images/logos_instagram.png" className="w-[60x] h-[17px] md:h-[33px] md:w-[115px] " />
+                                <img src="/images/logos_instagram.svg" className="w-[60x] h-[17px] md:h-[33px] md:w-[115px] " />
                                 <img src="/icons/logoicon.svg" width={170} height={57} className="h-[30px] w-[90px] md:h-[57px] md:w-[170px]" />
                                 <p className="text-[16px] text-black-500 pb-2">
                                     @galk_willings
                                 </p>
-                                <a href="https://www.instagram.com/galk_willings/" className="h-[30px] lg:h-[57px] px-[20px] gap-[24px] flex items-center justify-center md:py-[14px] text-[10px] md:text-[18px]  relative font-normal  text-white rounded-full border primary-btn w-full">
+                                <a href="https://www.instagram.com/galk_willings/" target="_blank" className="h-[30px] lg:h-[57px] px-[20px] gap-[24px] flex items-center justify-center md:py-[14px] text-[10px] md:text-[18px]  relative font-normal  text-white rounded-full border primary-btn w-full">
                                     Follow Us!!
                                     <ChevronRightIcon className="w-4 h-4 absolute right-3 lg:right-6" />
                                 </a>
@@ -236,7 +236,7 @@ export default function Dashboard() {
 
                 </div>
             </div>
-            <div className="flex items-center justify-center w-full bg-white py-10 md:py-[80px]">
+            <div className="flex items-center justify-center w-full bg-white py-10 md:py-[80px]" id="faq">
                 <div className="w-full max-w-[1062px] px-5 md:px-[9px]">
                     <div className="flex gap-2 ">
                         <p className="md:text-[32px] text-[24px]   font-bold text-black_light ">

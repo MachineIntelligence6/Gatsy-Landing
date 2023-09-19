@@ -34,7 +34,7 @@ export default {
       },
       backgroundImage: {
 
-        "primary-image": "url(/images/theme-bg.png)",
+        "primary-image": "url(/images/theme.png)",
         "header-image": "url(/images/header.png)",
         "primary-image-mobile": "url(/images/theme-bg-mobile.png)",
       },
